@@ -36,8 +36,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> listAll() {
         List<User> List = userDao.listAll();
-//        City city = cityDao.findById(user.getId());
-//        user.setCity(city);
+//        City city = cityDao.findById(admin.getId());
+//        admin.setCity(city);
         return List;
 
     }

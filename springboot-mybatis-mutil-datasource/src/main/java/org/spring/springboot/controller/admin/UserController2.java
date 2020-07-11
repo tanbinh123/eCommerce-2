@@ -1,4 +1,4 @@
-package org.spring.springboot.controller;
+package org.spring.springboot.controller.admin;
 
 import org.spring.springboot.domain.User;
 import org.spring.springboot.service.UserService;
@@ -8,13 +8,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/admin2")
+public class UserController2 {
 
     @Autowired
     private UserService userService;
@@ -27,11 +26,11 @@ public class UserController {
     }
 
     @RequestMapping("/userList")
-    public String userList(ModelMap map) {
+    public String userList2(ModelMap map) {
         map.addAttribute("host", "User list");
         List<User> List = userService.listAll();
         map.addAttribute("List", List);
-        return "user/userList";
+        return "admin/userList2";
     }
 
 }

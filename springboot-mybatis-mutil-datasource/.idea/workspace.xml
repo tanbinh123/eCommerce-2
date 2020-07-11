@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58fb2f86-6a93-4a71-bb2a-4318b605fb27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/UserController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/CityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/cluster/CityMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/master/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userList2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/userList.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/admin" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,9 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.spring.springboot.controller.admin" />
       <recent name="org.spring.springboot.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/admin" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/user" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -128,7 +127,7 @@
       <updated>1594290516945</updated>
       <workItem from="1594290518181" duration="7937000" />
       <workItem from="1594444046818" duration="27000" />
-      <workItem from="1594444126411" duration="9645000" />
+      <workItem from="1594444126411" duration="14646000" />
     </task>
     <servers />
   </component>
@@ -148,38 +147,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1594457064085" />
-    <state width="1250" height="230" key="GridCell.Tab.0.bottom" timestamp="1594457582164">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom" timestamp="1594485210453">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594457582164" />
-    <state width="1250" height="230" key="GridCell.Tab.0.center" timestamp="1594457582164">
+    <state width="1398" height="230" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594485210453" />
+    <state width="1398" height="230" key="GridCell.Tab.0.center" timestamp="1594485210452">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594457582164" />
-    <state width="1250" height="230" key="GridCell.Tab.0.left" timestamp="1594457582163">
+    <state width="1398" height="230" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594485210452" />
+    <state width="1398" height="230" key="GridCell.Tab.0.left" timestamp="1594485210452">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594457582163" />
-    <state width="1250" height="230" key="GridCell.Tab.0.right" timestamp="1594457582164">
+    <state width="1398" height="230" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594485210452" />
+    <state width="1398" height="230" key="GridCell.Tab.0.right" timestamp="1594485210453">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594457582164" />
-    <state width="1250" height="230" key="GridCell.Tab.1.bottom" timestamp="1594457582165">
+    <state width="1398" height="230" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594485210453" />
+    <state width="1398" height="230" key="GridCell.Tab.1.bottom" timestamp="1594485210454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594457582165" />
-    <state width="1250" height="230" key="GridCell.Tab.1.center" timestamp="1594457582164">
+    <state width="1398" height="230" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594485210454" />
+    <state width="1398" height="230" key="GridCell.Tab.1.center" timestamp="1594485210454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594457582164" />
-    <state width="1250" height="230" key="GridCell.Tab.1.left" timestamp="1594457582164">
+    <state width="1398" height="230" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594485210454" />
+    <state width="1398" height="230" key="GridCell.Tab.1.left" timestamp="1594485210453">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594457582164" />
-    <state width="1250" height="230" key="GridCell.Tab.1.right" timestamp="1594457582165">
+    <state width="1398" height="230" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594485210453" />
+    <state width="1398" height="230" key="GridCell.Tab.1.right" timestamp="1594485210454">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1250" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594457582165" />
+    <state width="1398" height="230" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594485210454" />
     <state width="1250" height="285" key="GridCell.Tab.2.bottom" timestamp="1594291964267">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

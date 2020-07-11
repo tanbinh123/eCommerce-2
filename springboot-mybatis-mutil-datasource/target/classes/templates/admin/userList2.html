@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1 th:text="${host}">User List</h1>
+<!-- 不存在则忽略，显示hello null!(可以通过默认值进行设置)-->
+<h2 th:text="'Hello ' + (${name}?:'admin')">333</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+<!--        <th>AGE</th>-->
+    </tr>
+    <tr th:each="User : ${List}">
+        <td th:text="${User.getId()}">1</td>
+        <td th:text="${User.getUserName()}">海</td>
+    </tr>
+</table>
+</body>
+</html>
