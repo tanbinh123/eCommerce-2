@@ -5,26 +5,20 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- *
- * @author 程序猿DD
- * @version 1.0.0
- * @blog http://blog.didispace.com
- *
- */
+
 @Controller
 public class HelloController {
     
     @ResponseBody
-    @RequestMapping("/hello")
+    @RequestMapping("/helloworld")
     public String hello() {
         return "Hello World";
     }
 
-    @RequestMapping("/index")
+    @RequestMapping("/HELLO")
     public String index(ModelMap map) {
-        map.addAttribute("host", "http://blog.didispace.com");
-        return "index";
+        map.addAttribute("host", "HELLO");
+        return "hello";
     }
 
 }
