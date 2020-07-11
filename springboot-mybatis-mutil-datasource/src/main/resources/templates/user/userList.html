@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
+<h1 th:text="${host}">User List</h1>
 <!-- 不存在则忽略，显示hello null!(可以通过默认值进行设置)-->
 <p th:text="'Hello ' + (${name}?:'admin')">3333</p>
 <table>

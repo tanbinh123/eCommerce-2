@@ -17,7 +17,13 @@
 		select
 		<include refid="Base_Column_List" />
 		from user
-		where id = 1
+		where user_name = #{userName}
+	</select>
+
+	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from user
 	</select>
 
 </mapper>

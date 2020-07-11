@@ -4,6 +4,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.spring.springboot.domain.User;
 
+import java.util.List;
+
 /**
  * 用户 DAO 接口类
  *
@@ -19,4 +21,6 @@ public interface UserDao {
      * @return
      */
     User findByName(@Param("userName") String userName);
+    List<User> listAll();
+
 }

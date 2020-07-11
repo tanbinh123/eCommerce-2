@@ -8,6 +8,9 @@ import org.spring.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 用户业务实现层
  *
@@ -25,8 +28,17 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByName(String userName) {
         User user = userDao.findByName(userName);
-        City city = cityDao.findByName("温岭市");
+        City city = cityDao.findById(user.getId());
         user.setCity(city);
         return user;
+    }
+
+    @Override
+    public List<User> listAll() {
+        List<User> List = userDao.listAll();
+//        City city = cityDao.findById(user.getId());
+//        user.setCity(city);
+        return List;
+
     }
 }

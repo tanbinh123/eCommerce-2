@@ -28,10 +28,8 @@ public class UserController {
 
     @RequestMapping("/userList")
     public String userList(ModelMap map) {
-        List<User> List = new ArrayList<User>();
-//        List.add(new User(1, "校长", 24));
-//        List.add(new User(2, "书记", 28));
-        List.add(userService.findByName("*"));
+        map.addAttribute("host", "User list");
+        List<User> List = userService.listAll();
         map.addAttribute("List", List);
         return "user/userList";
     }
