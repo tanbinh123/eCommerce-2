@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="58fb2f86-6a93-4a71-bb2a-4318b605fb27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/CityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/cluster/CityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/UserRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/userList2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/UserRestController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/userList2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +129,7 @@
       <updated>1594290516945</updated>
       <workItem from="1594290518181" duration="7937000" />
       <workItem from="1594444046818" duration="27000" />
-      <workItem from="1594444126411" duration="15599000" />
+      <workItem from="1594444126411" duration="17988000" />
     </task>
     <servers />
   </component>
@@ -143,38 +149,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1594457064085" />
-    <state width="307" height="756" key="GridCell.Tab.0.bottom" timestamp="1594535835386">
+    <state x="469" y="351" width="504" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594536244544">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594535835386" />
-    <state width="307" height="756" key="GridCell.Tab.0.center" timestamp="1594535835385">
+    <state x="469" y="351" width="504" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1594536244544" />
+    <state width="1398" height="144" key="GridCell.Tab.0.bottom" timestamp="1594538747059">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594535835385" />
-    <state width="307" height="756" key="GridCell.Tab.0.left" timestamp="1594535835385">
+    <state width="1398" height="144" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594538747059" />
+    <state width="1398" height="144" key="GridCell.Tab.0.center" timestamp="1594538747058">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594535835385" />
-    <state width="307" height="756" key="GridCell.Tab.0.right" timestamp="1594535835385">
+    <state width="1398" height="144" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594538747058" />
+    <state width="1398" height="144" key="GridCell.Tab.0.left" timestamp="1594538747058">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594535835385" />
-    <state width="307" height="756" key="GridCell.Tab.1.bottom" timestamp="1594535835387">
+    <state width="1398" height="144" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594538747058" />
+    <state width="1398" height="144" key="GridCell.Tab.0.right" timestamp="1594538747059">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594535835387" />
-    <state width="307" height="756" key="GridCell.Tab.1.center" timestamp="1594535835387">
+    <state width="1398" height="144" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594538747059" />
+    <state width="1398" height="144" key="GridCell.Tab.1.bottom" timestamp="1594538747060">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594535835387" />
-    <state width="307" height="756" key="GridCell.Tab.1.left" timestamp="1594535835386">
+    <state width="1398" height="144" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594538747060" />
+    <state width="1398" height="144" key="GridCell.Tab.1.center" timestamp="1594538747059">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594535835386" />
-    <state width="307" height="756" key="GridCell.Tab.1.right" timestamp="1594535835387">
+    <state width="1398" height="144" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594538747059" />
+    <state width="1398" height="144" key="GridCell.Tab.1.left" timestamp="1594538747059">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="307" height="756" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594535835387" />
+    <state width="1398" height="144" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594538747059" />
+    <state width="1398" height="144" key="GridCell.Tab.1.right" timestamp="1594538747059">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="144" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594538747059" />
     <state width="1250" height="285" key="GridCell.Tab.2.bottom" timestamp="1594291964267">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

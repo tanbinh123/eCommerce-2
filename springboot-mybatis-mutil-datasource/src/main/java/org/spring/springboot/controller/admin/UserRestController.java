@@ -1,4 +1,4 @@
-package org.spring.springboot.controller;
+package org.spring.springboot.controller.admin;
 
 import org.spring.springboot.domain.City;
 import org.spring.springboot.domain.User;
