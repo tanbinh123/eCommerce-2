@@ -6,8 +6,21 @@
 </head>
 <body>
 <h1 th:text="${host}">User List</h1>
-<!-- 不存在则忽略，显示hello null!(可以通过默认值进行设置)-->
-<h2 th:text="'Hello ' + (${name}?:'admin')">333</h2>
+<h2>search user</h2>
+<form action="/api/user" method="get">
+    <label for="username">username</label>
+    <input id='username' type="text" name="userName" value=""/>
+    <button type="submit">提交</button>
+<!--    <button type="reset">重置</button>-->
+</form>
+<!--<form action="/" th:object="${user}" method="post">-->
+<!--    ID：<input type="text" name="username" th:value="*{username}"/>-->
+<!--    &lt;!&ndash;    <br/>&ndash;&gt;-->
+<!--    NAME：<input type="text" name="name" th:value="*{name}"/>-->
+<!--    &lt;!&ndash;    <br/>&ndash;&gt;-->
+<!--    <button type="submit">提交</button> <button type="reset">重置</button>-->
+<!--</form>-->
+<h2>user list</h2>
 <table>
     <tr>
         <th>ID</th>
