@@ -5,13 +5,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -49,6 +56,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.spring.springboot.service.impl" />
       <recent name="org.spring.springboot.service" />
@@ -147,38 +157,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="469" y="351" width="504" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1594536244544" />
-    <state width="1398" height="144" key="GridCell.Tab.0.bottom" timestamp="1594556499991">
+    <state width="1398" height="144" key="GridCell.Tab.0.bottom" timestamp="1594629299871">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594556499991" />
-    <state width="1398" height="144" key="GridCell.Tab.0.center" timestamp="1594556499990">
+    <state width="1398" height="144" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594629299871" />
+    <state width="1398" height="144" key="GridCell.Tab.0.center" timestamp="1594629299870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594556499990" />
-    <state width="1398" height="144" key="GridCell.Tab.0.left" timestamp="1594556499989">
+    <state width="1398" height="144" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594629299870" />
+    <state width="1398" height="144" key="GridCell.Tab.0.left" timestamp="1594629299870">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594556499989" />
-    <state width="1398" height="144" key="GridCell.Tab.0.right" timestamp="1594556499990">
+    <state width="1398" height="144" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594629299870" />
+    <state width="1398" height="144" key="GridCell.Tab.0.right" timestamp="1594629299871">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594556499990" />
-    <state width="1398" height="144" key="GridCell.Tab.1.bottom" timestamp="1594556499992">
+    <state width="1398" height="144" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594629299871" />
+    <state width="1398" height="144" key="GridCell.Tab.1.bottom" timestamp="1594629299872">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594556499992" />
-    <state width="1398" height="144" key="GridCell.Tab.1.center" timestamp="1594556499991">
+    <state width="1398" height="144" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594629299872" />
+    <state width="1398" height="144" key="GridCell.Tab.1.center" timestamp="1594629299872">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594556499991" />
-    <state width="1398" height="144" key="GridCell.Tab.1.left" timestamp="1594556499991">
+    <state width="1398" height="144" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594629299872" />
+    <state width="1398" height="144" key="GridCell.Tab.1.left" timestamp="1594629299871">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594556499991" />
-    <state width="1398" height="144" key="GridCell.Tab.1.right" timestamp="1594556499992">
+    <state width="1398" height="144" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594629299871" />
+    <state width="1398" height="144" key="GridCell.Tab.1.right" timestamp="1594629299872">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="144" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594556499992" />
+    <state width="1398" height="144" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594629299872" />
     <state width="1250" height="285" key="GridCell.Tab.2.bottom" timestamp="1594291964267">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
