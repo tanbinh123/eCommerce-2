@@ -17,7 +17,7 @@
 		select
 		<include refid="Base_Column_List" />
 		from user
-		where user_name = #{userName}
+		where user_name like #{userName}
 	</select>
 
 	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">

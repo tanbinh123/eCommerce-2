@@ -20,23 +20,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-
-
-
-//    @RequestMapping("/userList")
-//    public String userList2(ModelMap map) {
-//        map.addAttribute("host", "User list");
-//        List<User> List = userService.listAll();
-//        map.addAttribute("List", List);
-//        return "admin/userList";
-//    }
-
     @GetMapping("/userList")
     public String listAllUsers(Model model) {
-        model.addAttribute("host", "User list");
-        List<User> List = userService.listAll();
+        List<User> List;
+        List = userService.findByName("");
         model.addAttribute("List", List);
-        model.addAttribute("user", new User());
         return "admin/userList";
     }
 
@@ -44,8 +32,7 @@ public class UserController {
     public String findByName(Model model, @ModelAttribute User user) {
         String myUserName = user.getUserName();
         List<User> List;
-        List = new ArrayList<User>();
-        List.add(userService.findByName(myUserName));
+        List = userService.findByName(myUserName);
         model.addAttribute("List", List);
         return "admin/userList";
     }

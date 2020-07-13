@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * 用户控制层
  *
@@ -27,7 +29,7 @@ public class UserRestController {
      * @return
      */
     @RequestMapping(value = "/api/user", method = RequestMethod.GET)
-    public User findByName(@RequestParam(value = "userName", required = true) String userName) {
+    public List<User> findByName(@RequestParam(value = "userName", required = true) String userName) {
         return userService.findByName(userName);
     }
 

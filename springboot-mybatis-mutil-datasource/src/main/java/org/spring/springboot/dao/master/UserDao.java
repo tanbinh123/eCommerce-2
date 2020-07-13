@@ -20,7 +20,7 @@ public interface UserDao {
      * @param userName
      * @return
      */
-    User findByName(@Param("userName") String userName);
+    List<User> findByName(@Param("userName") String userName);
     List<User> listAll();
 
 }

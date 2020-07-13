@@ -25,20 +25,17 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private CityDao cityDao; // 从数据源
 
-    @Override
-    public User findByName(String userName) {
-        User user = userDao.findByName(userName);
-        City city = cityDao.findById(user.getId());
-        user.setCity(city);
-        return user;
-    }
 
     @Override
-    public List<User> listAll() {
-        List<User> List = userDao.listAll();
-//        City city = cityDao.findById(admin.getId());
-//        admin.setCity(city);
-        return List;
-
+    public List<User> findByName(String userName) {
+        if (userName.equals("")) {
+            userName = "%";
+        }
+        List<User> list = userDao.findByName(userName);
+//        User user = userDao.findByName(userName);
+//        City city = cityDao.findById(user.getId());
+//        user.setCity(city);
+        return list;
     }
+
 }

@@ -18,6 +18,5 @@ public interface UserService {
      * @param userName
      * @return
      */
-    User findByName(String userName);
-    List<User> listAll();
+    List<User> findByName(String userName);
 }
