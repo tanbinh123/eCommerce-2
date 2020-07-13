@@ -9,8 +9,10 @@
 <h2>search user</h2>
 
 <form action="#" th:action="@{/userList}" th:object="${user}" method="post">
-    <p>Name: <input type="text" th:field="*{userName}" /></p>
-    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    <p>id: <input type="text" th:field="*{id}" /></p>
+    <p>username: <input type="text" th:field="*{userName}" /></p>
+    <p><input type="submit" value="Search" /></p>
+<!--    <p><input type="reset" value="Reset" /></p>-->
 </form>
 
 <h2>user list</h2>

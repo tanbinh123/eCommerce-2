@@ -27,10 +27,16 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
+    public List<User> findById(long id) {
+        List<User> list = userDao.findById(id);
+//        User user = userDao.findByName(userName);
+//        City city = cityDao.findById(user.getId());
+//        user.setCity(city);
+        return list;
+    }
+
+    @Override
     public List<User> findByName(String userName) {
-        if (userName.equals("")) {
-            userName = "%";
-        }
         List<User> list = userDao.findByName(userName);
 //        User user = userDao.findByName(userName);
 //        City city = cityDao.findById(user.getId());

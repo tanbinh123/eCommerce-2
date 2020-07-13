@@ -24,7 +24,6 @@ public class UserController {
     public String listAllUsers(Model model) {
         model.addAttribute("host", "List of all users");
         model.addAttribute("user", new User());
-
         List<User> List;
         List = userService.findByName("");
         model.addAttribute("List", List);
@@ -32,11 +31,16 @@ public class UserController {
     }
 
     @PostMapping("/userList")
-    public String findByName(Model model, @ModelAttribute User user) {
+    public String findByIdOrName(Model model, @ModelAttribute User user) {
         model.addAttribute("host", "Searching results");
-        String myUserName = user.getUserName();
         List<User> List;
-        List = userService.findByName(myUserName);
+        if(user.getId() != null){
+            List = userService.findById(user.getId());
+        }else if (user.getUserName().equals("")) {
+            List = userService.findByName("%");
+        }else{
+            List = userService.findByName(user.getUserName());
+        }
         model.addAttribute("List", List);
         return "admin/userList";
     }

@@ -18,5 +18,7 @@ public interface UserService {
      * @param userName
      * @return
      */
+    List<User> findById(long userName);
     List<User> findByName(String userName);
+
 }

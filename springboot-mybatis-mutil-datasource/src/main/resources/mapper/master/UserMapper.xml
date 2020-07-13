@@ -20,6 +20,13 @@
 		where user_name like #{userName}
 	</select>
 
+	<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from user
+		where id like #{id}
+	</select>
+
 	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List" />
