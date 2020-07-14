@@ -25,7 +25,7 @@ public class UserController {
         model.addAttribute("host", "List of all users");
         model.addAttribute("user", new User());
         List<User> List;
-        List = userService.findByName("");
+        List = userService.findByName("%");
         model.addAttribute("List", List);
         return "admin/userList";
     }

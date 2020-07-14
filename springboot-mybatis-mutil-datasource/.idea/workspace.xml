@@ -4,21 +4,7 @@
     <list default="true" id="58fb2f86-6a93-4a71-bb2a-4318b605fb27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/master/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/master/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/master/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/userList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,38 +155,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="469" y="351" width="504" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.877@0.23.1440.877" timestamp="1594536244544" />
-    <state width="1398" height="189" key="GridCell.Tab.0.bottom" timestamp="1594637585859">
+    <state width="1398" height="189" key="GridCell.Tab.0.bottom" timestamp="1594641168976">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594637585859" />
-    <state width="1398" height="189" key="GridCell.Tab.0.center" timestamp="1594637585858">
+    <state width="1398" height="189" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594641168976" />
+    <state width="1398" height="189" key="GridCell.Tab.0.center" timestamp="1594641168975">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594637585858" />
-    <state width="1398" height="189" key="GridCell.Tab.0.left" timestamp="1594637585858">
+    <state width="1398" height="189" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1594641168975" />
+    <state width="1398" height="189" key="GridCell.Tab.0.left" timestamp="1594641168975">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594637585858" />
-    <state width="1398" height="189" key="GridCell.Tab.0.right" timestamp="1594637585859">
+    <state width="1398" height="189" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1594641168975" />
+    <state width="1398" height="189" key="GridCell.Tab.0.right" timestamp="1594641168976">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594637585859" />
-    <state width="1398" height="189" key="GridCell.Tab.1.bottom" timestamp="1594637585860">
+    <state width="1398" height="189" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1594641168976" />
+    <state width="1398" height="189" key="GridCell.Tab.1.bottom" timestamp="1594641168977">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594637585860" />
-    <state width="1398" height="189" key="GridCell.Tab.1.center" timestamp="1594637585860">
+    <state width="1398" height="189" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1594641168977" />
+    <state width="1398" height="189" key="GridCell.Tab.1.center" timestamp="1594641168977">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594637585860" />
-    <state width="1398" height="189" key="GridCell.Tab.1.left" timestamp="1594637585859">
+    <state width="1398" height="189" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1594641168977" />
+    <state width="1398" height="189" key="GridCell.Tab.1.left" timestamp="1594641168976">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594637585859" />
-    <state width="1398" height="189" key="GridCell.Tab.1.right" timestamp="1594637585860">
+    <state width="1398" height="189" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1594641168976" />
+    <state width="1398" height="189" key="GridCell.Tab.1.right" timestamp="1594641168977">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="189" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594637585860" />
+    <state width="1398" height="189" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1594641168977" />
     <state width="1250" height="285" key="GridCell.Tab.2.bottom" timestamp="1594291964267">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
