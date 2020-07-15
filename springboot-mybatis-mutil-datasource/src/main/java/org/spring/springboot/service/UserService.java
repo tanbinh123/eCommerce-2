@@ -20,5 +20,6 @@ public interface UserService {
      */
     List<User> findById(long userName);
     List<User> findByName(String userName);
+    void setCity(List<User> list);
 
 }

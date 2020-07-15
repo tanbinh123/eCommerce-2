@@ -41,6 +41,7 @@ public class UserController {
         }else{
             List = userService.findByName(user.getUserName());
         }
+
         model.addAttribute("List", List);
         return "admin/userList";
     }

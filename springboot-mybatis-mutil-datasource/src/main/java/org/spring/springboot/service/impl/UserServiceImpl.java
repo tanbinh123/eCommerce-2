@@ -29,6 +29,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findById(long id) {
         List<User> list = userDao.findById(id);
+        setCity(list);
 //        User user = userDao.findByName(userName);
 //        City city = cityDao.findById(user.getId());
 //        user.setCity(city);
@@ -38,10 +39,18 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> findByName(String userName) {
         List<User> list = userDao.findByName(userName);
+        setCity(list);
 //        User user = userDao.findByName(userName);
 //        City city = cityDao.findById(user.getId());
 //        user.setCity(city);
         return list;
+    }
+
+    @Override
+    public void setCity(List<User> list) {
+        for(User myUser : list){
+            myUser.setCity(cityDao.findById(myUser.getId()));
+        }
     }
 
 }
