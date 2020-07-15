@@ -20,7 +20,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/userList")
+    @GetMapping("/user")
     public String listAllUsers(Model model) {
         model.addAttribute("host", "List of all users");
         model.addAttribute("user", new User());
@@ -28,10 +28,10 @@ public class UserController {
         List = userService.findByName("%");
         userService.setCity(List);
         model.addAttribute("List", List);
-        return "admin/userList";
+        return "admin/user";
     }
 
-    @PostMapping("/userList")
+    @PostMapping("/user")
     public String findByIdOrName(Model model, @ModelAttribute User user) {
         model.addAttribute("host", "Searching results");
         List<User> List;
@@ -44,7 +44,7 @@ public class UserController {
         }
         userService.setCity(List);
         model.addAttribute("List", List);
-        return "admin/userList";
+        return "admin/user";
     }
 
     @GetMapping("/greeting")
