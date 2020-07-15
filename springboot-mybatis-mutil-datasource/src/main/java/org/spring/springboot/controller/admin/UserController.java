@@ -53,7 +53,7 @@ public class UserController {
     @PostMapping("/user")
     public String userRegistration(Model model, @ModelAttribute User user) {
         if(user.getId() == null){
-            return "";
+            return "admin/inputWarning";
         }
         userService.saveUser(user);
         //create city
@@ -67,9 +67,10 @@ public class UserController {
     @PostMapping("/userDelete")
     public String deleteUser(Model model, @ModelAttribute User user) {
         if(user.getId() == null){
-            return "";
+            return "admin/inputWarning";
         }
         userService.deleteUser(user.getId());
+        cityService.deleteCity(user.getId());
         return "redirect:/user";
     }
 

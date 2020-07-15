@@ -41,7 +41,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public void setCity(List<User> list) {
         for(User myUser : list){
-            myUser.setCity(cityDao.findById(myUser.getId()));
+            if (cityDao.findById(myUser.getId()) != null){
+                myUser.setCity(cityDao.findById(myUser.getId()));
+            }
         }
     }
 
