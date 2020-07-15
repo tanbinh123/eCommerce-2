@@ -3,13 +3,13 @@
 <mapper namespace="org.spring.springboot.dao.cluster.WalletDao">
 	<resultMap id="BaseResultMap" type="org.spring.springboot.domain.Wallet">
 		<result column="user_id" property="id" />
-		<result column="money" property="money" />
+		<result column="asset" property="asset" />
 	</resultMap>
 
 	<parameterMap id="Wallet" type="org.spring.springboot.domain.Wallet"/>
 
 	<sql id="Base_Column_List">
-		user_id, money
+		user_id, asset
 	</sql>
 
 
@@ -23,17 +23,17 @@
 
 	<insert id="saveWallet" parameterMap="Wallet" useGeneratedKeys="true" keyProperty="id">
 		insert into
-			wallet(user_id,money)
+			wallet(user_id,asset)
 		values
-			(#{id},#{money})
+			(#{id},#{asset})
 	</insert>
 
 	<update id="updateWallet" parameterMap="Wallet">
 		update
 			wallet
 		set
-		<if test="money!=null">
-			money = #{money}
+		<if test="asset!=null">
+			asset = #{asset}
 		</if>
 		where
 			user_id = #{id}

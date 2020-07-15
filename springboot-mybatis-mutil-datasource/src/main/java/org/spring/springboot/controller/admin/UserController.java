@@ -73,7 +73,7 @@ public class UserController {
         //create wallet
         Wallet wallet = new Wallet();
         wallet.setId(user.getId());
-        wallet.setMoney((long) 0);
+        wallet.setAsset((long) 0);
         walletService.saveWallet(wallet);
         return "redirect:/user";
     }
