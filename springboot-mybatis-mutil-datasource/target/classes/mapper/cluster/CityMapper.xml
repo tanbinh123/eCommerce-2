@@ -6,12 +6,14 @@
 		<result column="province_id" property="provinceId" />
 		<result column="city_name" property="cityName" />
 		<result column="description" property="description" />
+		<result column="phonenumber" property="phoneNumber" />
+		<result column="address" property="address" />
 	</resultMap>
 
 	<parameterMap id="City" type="org.spring.springboot.domain.City"/>
 
 	<sql id="Base_Column_List">
-		id, province_id, city_name, description
+		id, province_id, city_name, description, phonenumber, address
 	</sql>
 
 	<select id="findByName" resultMap="BaseResultMap" parameterType="java.lang.String">

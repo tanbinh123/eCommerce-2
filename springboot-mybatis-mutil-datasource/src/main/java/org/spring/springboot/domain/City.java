@@ -29,6 +29,10 @@ public class City {
      */
     private String description;
 
+    private Long phoneNumber;
+
+    private String address;
+
     public Long getId() {
         return id;
     }
@@ -59,5 +63,21 @@ public class City {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Long getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(Long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
