@@ -39,4 +39,11 @@
 			(#{id},#{userName})
 	</insert>
 
+	<delete id="deleteUser" parameterType="java.lang.Long">
+		delete from
+			user
+		where
+			user_id = #{id}
+	</delete>
+
 </mapper>

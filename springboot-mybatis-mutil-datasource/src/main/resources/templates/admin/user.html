@@ -29,7 +29,12 @@
         </form>
     </div>
     <div id="right" style="background-color:#A6ACAF;color:#000000;height:200px;width:150px;float:right;">
-        信息内容
+        <b>删除</b>
+        <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">
+            <p>id: <input type="text" th:field="*{id}" /></p>
+            <p><input type="submit" value="删除" /></p>
+            <!--    <p><input type="reset" value="Reset" /></p>-->
+        </form>
     </div>
     <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
         <b th:text="${host}" >user list</b>

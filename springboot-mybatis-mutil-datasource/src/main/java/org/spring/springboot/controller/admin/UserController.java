@@ -1,6 +1,5 @@
 package org.spring.springboot.controller.admin;
 
-import org.spring.springboot.domain.Greeting;
 import org.spring.springboot.domain.City;
 import org.spring.springboot.service.CityService;
 import org.spring.springboot.domain.User;
@@ -8,10 +7,8 @@ import org.spring.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -63,19 +60,17 @@ public class UserController {
         City city = new City();
         city.setId(user.getId());
         cityService.saveCity(city);
+
         return "redirect:/user";
     }
 
-    @GetMapping("/greeting")
-    public String greetingForm(Model model) {
-        model.addAttribute("greeting", new Greeting());
-        return "greeting";
+    @PostMapping("/userDelete")
+    public String deleteUser(Model model, @ModelAttribute User user) {
+        if(user.getId() == null){
+            return "";
+        }
+        userService.deleteUser(user.getId());
+        return "redirect:/user";
     }
-
-    @PostMapping("/greeting")
-    public String greetingSubmit(@ModelAttribute Greeting greeting) {
-        return "result";
-    }
-
 
 }
