@@ -41,7 +41,7 @@ public class UserController {
         }else{
             List = userService.findByName(user.getUserName());
         }
-
+        userService.setCity(List);
         model.addAttribute("List", List);
         return "admin/userList";
     }
