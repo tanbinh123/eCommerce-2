@@ -21,30 +21,45 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/user")
-    public String listAllUsers(Model model) {
-        model.addAttribute("host", "List of all users");
+    public String listAllUsers(Long id, Model model) {
+
         model.addAttribute("user", new User());
         List<User> List;
-        List = userService.findByName("%");
+        if (id != null){
+            model.addAttribute("host", "搜索结果");
+            List = userService.findById(id);
+        }else{
+            model.addAttribute("host", "所有用户");
+            List = userService.findByName("%");
+        }
         userService.setCity(List);
         model.addAttribute("List", List);
         return "admin/user";
     }
 
+//    @GetMapping("/user/{id}")
+//    public String findUsers(Model model, @PathVariable("id") Long id) {
+//        model.addAttribute("host", "搜索结果");
+//        model.addAttribute("user", new User());
+//        List<User> List;
+//        List = userService.findById(id);
+//        userService.setCity(List);
+//        model.addAttribute("List", List);
+//        return "admin/user";
+//    }
+
     @PostMapping("/user")
-    public String findByIdOrName(Model model, @ModelAttribute User user) {
-        model.addAttribute("host", "Searching results");
-        List<User> List;
-        if(user.getId() != null){
-            List = userService.findById(user.getId());
-        }else if (user.getUserName().equals("")) {
-            List = userService.findByName("%");
-        }else{
-            List = userService.findByName(user.getUserName());
-        }
-        userService.setCity(List);
-        model.addAttribute("List", List);
-        return "admin/user";
+    public String userRegistration(Model model, @ModelAttribute User user) {
+//        if(user.getId() != null){
+//            userService.findById(user.getId());
+//        }else if (user.getUserName().equals("")) {
+//            userService.findByName("%");
+//        }else{
+//            userService.findByName(user.getUserName());
+//        }
+
+
+        return "redirect:/user";
     }
 
     @GetMapping("/greeting")
