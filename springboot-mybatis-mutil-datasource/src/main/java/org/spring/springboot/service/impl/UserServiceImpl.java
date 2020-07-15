@@ -1,9 +1,12 @@
 package org.spring.springboot.service.impl;
 
+import org.spring.springboot.dao.cluster.WalletDao;
+import org.spring.springboot.domain.Wallet;
 import org.spring.springboot.dao.cluster.CityDao;
-import org.spring.springboot.dao.master.UserDao;
 import org.spring.springboot.domain.City;
+import org.spring.springboot.dao.master.UserDao;
 import org.spring.springboot.domain.User;
+
 import org.spring.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +17,6 @@ import java.util.List;
 /**
  * 用户业务实现层
  *
- * Created by bysocket on 07/02/2017.
  */
 @Service
 public class UserServiceImpl implements UserService {
@@ -24,6 +26,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private CityDao cityDao; // 从数据源
+
+    @Autowired
+    private WalletDao walletDao; // 从数据源
 
 
     @Override
@@ -39,10 +44,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void setCity(List<User> list) {
+    public void setCityList(List<User> list) {
         for(User myUser : list){
             if (cityDao.findById(myUser.getId()) != null){
                 myUser.setCity(cityDao.findById(myUser.getId()));
+            }
+        }
+    }
+
+    @Override
+    public void setWalletList(List<User> list) {
+        for(User myUser : list){
+            if (walletDao.findById(myUser.getId()) != null){
+                myUser.setWallet(walletDao.findById(myUser.getId()));
             }
         }
     }
@@ -56,4 +70,6 @@ public class UserServiceImpl implements UserService {
     public Long deleteUser(Long id) {
         return userDao.deleteUser(id);
     }
+
+
 }

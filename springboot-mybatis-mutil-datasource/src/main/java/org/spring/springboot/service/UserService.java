@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * 用户业务接口层
  *
- * Created by bysocket on 07/02/2017.
  */
 public interface UserService {
 
@@ -20,7 +19,8 @@ public interface UserService {
      */
     List<User> findById(long userName);
     List<User> findByName(String userName);
-    void setCity(List<User> list);
+    void setCityList(List<User> list);
+    void setWalletList(List<User> list);
     Long saveUser(User user);
     Long deleteUser(Long id);
 

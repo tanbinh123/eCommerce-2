@@ -1,9 +1,12 @@
 package org.spring.springboot.controller.admin;
 
-import org.spring.springboot.domain.City;
-import org.spring.springboot.service.CityService;
 import org.spring.springboot.domain.User;
 import org.spring.springboot.service.UserService;
+import org.spring.springboot.domain.City;
+import org.spring.springboot.service.CityService;
+import org.spring.springboot.domain.Wallet;
+import org.spring.springboot.service.WalletService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +25,9 @@ public class UserController {
     @Autowired
     private CityService cityService;
 
+    @Autowired
+    private WalletService walletService;
+
     @GetMapping("/user")
     public String listAllUsers(Long id, Model model) {
 
@@ -34,7 +40,8 @@ public class UserController {
             model.addAttribute("host", "所有用户");
             List = userService.findByName("%");
         }
-        userService.setCity(List);
+        userService.setCityList(List);
+        userService.setWalletList(List);
         model.addAttribute("List", List);
         return "admin/user";
     }
@@ -55,12 +62,19 @@ public class UserController {
         if(user.getId() == null){
             return "admin/inputWarning";
         }
+        else if(userService.findById(user.getId()) == null){
+            return "admin/inputWarning";
+        }
         userService.saveUser(user);
         //create city
         City city = new City();
         city.setId(user.getId());
         cityService.saveCity(city);
-
+        //create wallet
+        Wallet wallet = new Wallet();
+        wallet.setId(user.getId());
+        wallet.setMoney((long) 0);
+        walletService.saveWallet(wallet);
         return "redirect:/user";
     }
 
@@ -71,6 +85,7 @@ public class UserController {
         }
         userService.deleteUser(user.getId());
         cityService.deleteCity(user.getId());
+        walletService.deleteWallet(user.getId());
         return "redirect:/user";
     }
 

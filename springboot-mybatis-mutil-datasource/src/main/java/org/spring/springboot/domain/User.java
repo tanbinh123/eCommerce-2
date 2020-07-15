@@ -7,22 +7,15 @@ package org.spring.springboot.domain;
  */
 public class User {
 
-    /**
-     * 城市编号
-     */
     private Long id;
 
-    /**
-     * 城市名称
-     */
     private String userName;
 
-    /**
-     * 描述
-     */
     private String description;
 
     private City city;
+
+    private Wallet wallet;
 
     public City getCity() {
         return city;
@@ -30,6 +23,14 @@ public class User {
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    public Wallet getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(Wallet wallet) {
+        this.wallet = wallet;
     }
 
     public Long getId() {
