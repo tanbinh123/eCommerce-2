@@ -32,4 +32,11 @@
 		from user
 	</select>
 
+	<insert id="saveUser" parameterMap="User" useGeneratedKeys="true" keyProperty="id">
+		insert into
+			user(user_id,user_name)
+		values
+			(#{id},#{userName})
+	</insert>
+
 </mapper>

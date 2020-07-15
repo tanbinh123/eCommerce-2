@@ -45,4 +45,9 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public Long saveUser(User user) {
+        return userDao.saveUser(user);
+    }
+
 }

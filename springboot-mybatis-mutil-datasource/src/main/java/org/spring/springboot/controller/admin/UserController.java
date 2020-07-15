@@ -1,6 +1,8 @@
 package org.spring.springboot.controller.admin;
 
 import org.spring.springboot.domain.Greeting;
+import org.spring.springboot.domain.City;
+import org.spring.springboot.service.CityService;
 import org.spring.springboot.domain.User;
 import org.spring.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CityService cityService;
 
     @GetMapping("/user")
     public String listAllUsers(Long id, Model model) {
@@ -50,15 +55,14 @@ public class UserController {
 
     @PostMapping("/user")
     public String userRegistration(Model model, @ModelAttribute User user) {
-//        if(user.getId() != null){
-//            userService.findById(user.getId());
-//        }else if (user.getUserName().equals("")) {
-//            userService.findByName("%");
-//        }else{
-//            userService.findByName(user.getUserName());
-//        }
-
-
+        if(user.getId() == null){
+            return "";
+        }
+        userService.saveUser(user);
+        //create city
+        City city = new City();
+        city.setId(user.getId());
+        cityService.saveCity(city);
         return "redirect:/user";
     }
 

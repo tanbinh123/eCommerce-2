@@ -22,5 +22,6 @@ public interface UserDao {
      */
     List<User> findByName(@Param("userName") String userName);
     List<User> findById(@Param("id") long id);
+    Long saveUser(User user);
 
 }
