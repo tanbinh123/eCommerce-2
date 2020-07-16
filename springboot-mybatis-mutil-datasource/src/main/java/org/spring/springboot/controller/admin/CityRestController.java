@@ -33,10 +33,10 @@ public class CityRestController {
         cityService.saveCity(city);
     }
 
-    @RequestMapping(value = "/api/city", method = RequestMethod.PUT)
-    public void modifyCity(@RequestBody City city) {
-        cityService.updateCity(city);
-    }
+//    @RequestMapping(value = "/api/city", method = RequestMethod.PUT)
+//    public void modifyCity(@RequestBody City city) {
+//        cityService.updateCity(city);
+//    }
 
     @RequestMapping(value = "/api/city/{id}", method = RequestMethod.DELETE)
     public void modifyCity(@PathVariable("id") Long id) {

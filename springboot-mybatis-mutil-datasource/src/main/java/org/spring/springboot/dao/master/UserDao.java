@@ -24,5 +24,5 @@ public interface UserDao {
     List<User> findById(@Param("id") long id);
     Long saveUser(User user);
     Long deleteUser(@Param("id") Long id);
-
+    Long updateUser(User user);
 }

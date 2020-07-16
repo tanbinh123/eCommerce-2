@@ -1,7 +1,6 @@
 package org.spring.springboot.dao.cluster;
 
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.*;
 import org.spring.springboot.domain.City;
 
 import java.util.List;
@@ -43,4 +42,21 @@ public interface CityDao {
     Long updateCity(City city);
 
     Long deleteCity(Long id);
+
+    @Update("UPDATE city SET city_name = #{cityName} WHERE id = #{userId}")
+    int updateCityName(@Param("cityName") String cityName, @Param("userId") long userId);
+
+    @Update("UPDATE city SET address = #{address} WHERE id = #{userId}")
+    int updateAddress(@Param("address") String address, @Param("userId") long userId);
+
+    @Update("UPDATE city SET description = #{description} WHERE id = #{userId}")
+    int updateDescription(@Param("description") String description, @Param("userId") long userId);
+
+    @Update("UPDATE city SET province_id = #{provinceId} WHERE id = #{userId}")
+    int updateProvinceId(@Param("provinceId") Long provinceId, @Param("userId") long userId);
+
+    @Update("UPDATE city SET phonenumber = #{phoneNumber} WHERE id = #{userId}")
+    int updatePhoneNumber(@Param("phoneNumber") Long phoneNumber, @Param("userId") long userId);
+
+
 }

@@ -22,6 +22,7 @@ public interface UserService {
     void setCityList(List<User> list);
     void setWalletList(List<User> list);
     Long saveUser(User user);
+    Long updateUser(User user);
     Long deleteUser(Long id);
 
 }

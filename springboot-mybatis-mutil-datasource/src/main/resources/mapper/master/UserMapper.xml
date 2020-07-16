@@ -39,6 +39,18 @@
 			(#{id},#{userName})
 	</insert>
 
+
+	<update id="updateUser" parameterMap="User">
+		update
+		user
+		set
+		<if test="userName != null and '' != userName">
+			user_name = #{userName}
+		</if>
+		where
+			user_id = #{id}
+	</update>
+
 	<delete id="deleteUser" parameterType="java.lang.Long">
 		delete from
 			user

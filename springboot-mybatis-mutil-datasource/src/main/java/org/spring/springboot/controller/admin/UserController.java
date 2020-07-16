@@ -1,5 +1,6 @@
 package org.spring.springboot.controller.admin;
 
+import org.spring.springboot.dao.cluster.CityDao;
 import org.spring.springboot.domain.User;
 import org.spring.springboot.service.UserService;
 import org.spring.springboot.domain.City;
@@ -24,6 +25,9 @@ public class UserController {
 
     @Autowired
     private CityService cityService;
+
+    @Autowired
+    private CityDao cityDao;
 
     @Autowired
     private WalletService walletService;
@@ -59,24 +63,51 @@ public class UserController {
 //    }
 
     @PostMapping("/user")
-    public String userRegistration(Model model, @ModelAttribute User user) {
+    public String userRegistrationOrUpdate(Model model, @ModelAttribute User user) {
         if(user.getId() == null){
             return "admin/inputWarning";
         }
-        else if(!userService.findById(user.getId()).isEmpty()){
-            return "admin/inputWarning";
+        if(userService.findById(user.getId()).isEmpty()){
+            userService.saveUser(user);
+            //create city
+            user.getCity().setId(user.getId());
+            cityService.saveCity(user.getCity());
+            //create wallet
+            Wallet wallet = new Wallet();
+            wallet.setId(user.getId());
+            wallet.setAsset(0);
+            walletService.saveWallet(wallet);
+        }else{
+            City cityInDB = cityService.findCityById(user.getId());
+            //test if city's param is not all null
+            if(user.getUserName() != null && user.getUserName() != "") {
+                userService.updateUser(user);
+            }
+            //test if city's param is not all null
+            user.getCity().setId(user.getId());
+
+            if(user.getCity().getAddress() != null && user.getCity().getAddress() != "" ) {
+                cityDao.updateAddress(user.getCity().getAddress(), user.getId());
+            }
+            if(user.getCity().getCityName() != null && user.getCity().getCityName() != "") {
+                cityDao.updateCityName(user.getCity().getCityName(),user.getId());
+
+            }
+            if(user.getCity().getProvinceId() != null){
+                cityDao.updateProvinceId(user.getCity().getProvinceId(), user.getId());
+            }
+            if(user.getCity().getDescription() != null && user.getCity().getDescription() != ""){
+                cityDao.updateDescription(user.getCity().getDescription(), user.getId());
+            }
+            if(user.getCity().getPhoneNumber() != null){
+                cityDao.updatePhoneNumber(user.getCity().getPhoneNumber(), user.getId());
+            }
+
+//            //update city
+//            cityService.updateCity(user.getCity());
+
         }
 
-        userService.saveUser(user);
-        //create city
-
-        user.getCity().setId(user.getId());
-        cityService.saveCity(user.getCity());
-        //create wallet
-        Wallet wallet = new Wallet();
-        wallet.setId(user.getId());
-        wallet.setAsset(0);
-        walletService.saveWallet(wallet);
         return "redirect:/user";
     }
 
