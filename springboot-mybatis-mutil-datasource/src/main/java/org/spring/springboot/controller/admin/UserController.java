@@ -30,8 +30,9 @@ public class UserController {
 
     @GetMapping("/user")
     public String listAllUsers(Long id, Model model) {
-
-        model.addAttribute("user", new User());
+        User tempUser = new User();
+        tempUser.setCity(new City());
+        model.addAttribute("user", tempUser);
         List<User> List;
         if (id != null){
             model.addAttribute("host", "搜索结果");
@@ -68,9 +69,9 @@ public class UserController {
 
         userService.saveUser(user);
         //create city
-        City city = new City();
-        city.setId(user.getId());
-        cityService.saveCity(city);
+
+        user.getCity().setId(user.getId());
+        cityService.saveCity(user.getCity());
         //create wallet
         Wallet wallet = new Wallet();
         wallet.setId(user.getId());
