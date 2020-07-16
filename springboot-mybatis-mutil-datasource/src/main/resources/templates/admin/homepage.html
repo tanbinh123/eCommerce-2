@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Transaction List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div id="maxname" style="width:600px;">
+    <div id="hname" style="background-color:#73C6B6;">
+        <h1 style="margin-bottom:0;text-align:center;" >Home Page</h1>
+    </div>
+
+
+    <div id="1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
+        <b>用户管理</b>
+        <form name="input" action="/user" method="get">
+            <p><input type="submit" value="开始"/></p>
+        </form>
+    </div>
+    <div id="2" style="background-color:#99A3A4;height:200px;width:150px;float:left;">
+<!--        <b>新建</b>-->
+<!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
+<!--            <p>id: <input type="text" th:field="*{id}" /></p>-->
+<!--            <p>username: <input type="text" th:field="*{userName}" /></p>-->
+<!--            <p><input type="submit" value="提交" /></p>-->
+<!--            &lt;!&ndash;    <p><input type="reset" value="Reset" /></p>&ndash;&gt;-->
+<!--        </form>-->
+    </div>
+    <div id="3" style="background-color:#A6ACAF;color:#5D6D7E;height:200px;width:150px;float:left;">
+<!--        <b>删除</b>-->
+<!--        <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">-->
+<!--            <p>id: <input type="text" th:field="*{id}" /></p>-->
+<!--            <p><input type="submit" value="删除" /></p>-->
+<!--            &lt;!&ndash;    <p><input type="reset" value="Reset" /></p>&ndash;&gt;-->
+<!--        </form>-->
+    </div>
+    <div id="4" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
+        <b>交易记录</b>
+        <form name="input" action="/transaction" method="get">
+            <p><input type="submit" value="开始"/></p>
+        </form>
+    </div>
+    <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

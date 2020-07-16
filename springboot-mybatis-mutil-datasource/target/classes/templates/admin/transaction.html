@@ -20,6 +20,11 @@
 <!--        </form>-->
     </div>
     <div id="create" style="background-color:#99A3A4;height:200px;width:150px;float:left;">
+        <b>搜索交易记录</b>
+        <form name="input" action="/transaction" method="get">
+            <p>id: <input type="text" name="id"/></p>
+            <p><input type="submit" value="搜索"/></p>
+        </form>
 <!--        <b>新建</b>-->
 <!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
 <!--            <p>id: <input type="text" th:field="*{id}" /></p>-->
@@ -37,11 +42,7 @@
 <!--        </form>-->
     </div>
     <div id="searchTransaction" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
-        <b>搜索交易记录</b>
-        <form name="input" action="/transaction" method="get">
-            <p>id: <input type="text" name="id"/></p>
-            <p><input type="submit" value="搜索"/></p>
-        </form>
+
     </div>
     <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
         <b th:text="${host}" >Transaction list</b>
