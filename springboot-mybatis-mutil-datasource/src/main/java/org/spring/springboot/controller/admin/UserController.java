@@ -62,9 +62,10 @@ public class UserController {
         if(user.getId() == null){
             return "admin/inputWarning";
         }
-        else if(userService.findById(user.getId()) == null){
+        else if(!userService.findById(user.getId()).isEmpty()){
             return "admin/inputWarning";
         }
+
         userService.saveUser(user);
         //create city
         City city = new City();
@@ -73,7 +74,7 @@ public class UserController {
         //create wallet
         Wallet wallet = new Wallet();
         wallet.setId(user.getId());
-        wallet.setAsset((long) 0);
+        wallet.setAsset(0);
         walletService.saveWallet(wallet);
         return "redirect:/user";
     }

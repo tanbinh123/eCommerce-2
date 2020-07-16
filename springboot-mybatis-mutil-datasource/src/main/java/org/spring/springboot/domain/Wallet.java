@@ -10,7 +10,7 @@ public class Wallet {
 
     private long id;
 
-    private long asset;
+    private double asset;
 
     public long getId() {
         return id;
@@ -20,7 +20,7 @@ public class Wallet {
         this.id = id;
     }
 
-    public long getAsset() {
+    public double getAsset() {
         return asset;
     }
 
