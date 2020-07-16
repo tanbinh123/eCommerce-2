@@ -25,7 +25,7 @@ public interface TransactionDao {
 
     List<Transaction> findAll();
 
-    List<Transaction> findByTransactionId(@Param("transactionId") long transactuinId);
+    List<Transaction> findByTransactionId(@Param("id") long transactuinId);
 
     List<Transaction> findByPayerId(@Param("payerId") long payerId);
 

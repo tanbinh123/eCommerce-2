@@ -28,7 +28,7 @@
 
 
     <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
-        <b>搜索交易记录</b>
+        <b>transaction搜索</b>
         <form name="input" action="/transaction" method="get">
             <p>transaction_id: <input type="text" name="id"/></p>
             <p><input type="submit" value="搜索"/></p>
@@ -36,7 +36,7 @@
 
     </div>
     <div id="body2" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
-        <b>搜索交易记录</b>
+        <b>payer搜索</b>
         <form name="input" action="/transaction/payer_id" method="get">
             <p>payer_id: <input type="text" name="payer_id"/></p>
             <p><input type="submit" value="搜索"/></p>
@@ -44,7 +44,7 @@
 
     </div>
     <div id="body3" style="background-color:#A6ACAF;height:200px;width:150px;float:left;">
-        <b>搜索交易记录</b>
+        <b>receiver搜索</b>
         <form name="input" action="/transaction/receiver_id" method="get">
             <p>receiver_id: <input type="text" name="receiver_id"/></p>
             <p><input type="submit" value="搜索"/></p>
@@ -58,12 +58,12 @@
         <b th:text="${host}" >Transaction list</b>
         <table>
             <tr>
-                <th>transaction_id</th>
-                <th>payer_id</th>
-                <th>receiver_id</th>
-                <th>amount</th>
-                <th>create_time</th>
-                <th>remark</th>
+                <th>交易id</th>
+                <th>付款人id</th>
+                <th>收款人id</th>
+                <th>金额</th>
+                <th>时间</th>
+                <th>备注</th>
             </tr>
             <tr th:each="Transaction : ${List}">
                 <td th:text="${Transaction.getId()}">1</td>
