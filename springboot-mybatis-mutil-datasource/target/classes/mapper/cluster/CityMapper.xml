@@ -38,9 +38,9 @@
 
 	<insert id="saveCity" parameterMap="City" useGeneratedKeys="true" keyProperty="id">
 		insert into
-			city(id,province_id,city_name,description)
+			city(id,province_id,city_name,description,phonenumber,address)
 		values
-			(#{id},#{provinceId},#{cityName},#{description})
+			(#{id},#{provinceId},#{cityName},#{description},#{phoneNumber},#{address})
 	</insert>
 
 	<update id="updateCity" parameterMap="City">
