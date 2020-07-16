@@ -7,10 +7,7 @@ import org.spring.springboot.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,6 +23,7 @@ public class TransactionController {
     private TransactionService transactionService;
 
 
+
     @GetMapping("/transaction")
     public String findByTransactionId(Long id, Model model) {
 
@@ -39,10 +37,40 @@ public class TransactionController {
             model.addAttribute("host", "所有交易");
             List = transactionService.findAll();
         }
-
         model.addAttribute("List", List);
         return "admin/transaction";
+    }
 
+    @GetMapping("/transaction/payer_id")
+    public String findByPayerId(Long payer_id, Model model) {
+        model.addAttribute("transaction", new Transaction());
+        List<Transaction> List;
+        if (payer_id != null){
+            model.addAttribute("host", "搜索结果");
+            List = transactionService.findByPayerId(payer_id);
+        }
+        else{
+            model.addAttribute("host", "所有交易");
+            List = transactionService.findAll();
+        }
+        model.addAttribute("List", List);
+        return "admin/transaction";
+    }
+
+    @GetMapping("/transaction/receiver_id")
+    public String findByReceiverId(Long receiver_id, Model model) {
+        model.addAttribute("transaction", new Transaction());
+        List<Transaction> List;
+        if (receiver_id != null){
+            model.addAttribute("host", "搜索结果");
+            List = transactionService.findByReceiverId(receiver_id);
+        }
+        else{
+            model.addAttribute("host", "所有交易");
+            List = transactionService.findAll();
+        }
+        model.addAttribute("List", List);
+        return "admin/transaction";
     }
 
 //    @GetMapping("/user/{id}")

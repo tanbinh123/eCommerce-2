@@ -24,6 +24,21 @@
 		where transaction_id = #{id}
 	</select>
 
+
+	<select id="findByPayerId" resultMap="BaseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from transaction
+		where payer_id = #{payerId}
+	</select>
+
+	<select id="findByReceiverId" resultMap="BaseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from transaction
+		where receiver_id = #{receiverId}
+	</select>
+
 	<select id="findAll" resultMap="BaseResultMap" parameterType="java.lang.Long">
 		select
 		<include refid="Base_Column_List" />

@@ -19,6 +19,10 @@ public interface TransactionService {
      */
     List<Transaction> findByTransactionId(Long id);
 
+    List<Transaction> findByPayerId(Long id);
+
+    List<Transaction> findByReceiverId(Long id);
+
     List<Transaction> findAll();
 
     /**

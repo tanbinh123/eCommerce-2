@@ -19,12 +19,17 @@ public interface TransactionDao {
     /**
      * 根据 ID，获取信息
      *
-     * @param id
      * @return
      */
-    List<Transaction> findByTransactionId(@Param("id") long id);
+
 
     List<Transaction> findAll();
+
+    List<Transaction> findByTransactionId(@Param("transactionId") long transactuinId);
+
+    List<Transaction> findByPayerId(@Param("payerId") long payerId);
+
+    List<Transaction> findByReceiverId(@Param("receiverId") long receiverId);
 
     long saveTransaction(Transaction transaction);
 

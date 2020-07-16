@@ -29,6 +29,14 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
+    public List<Transaction> findByPayerId(Long payerId) {
+        return transactionDao.findByPayerId(payerId);    }
+
+    @Override
+    public List<Transaction> findByReceiverId(Long receiverId) {
+        return transactionDao.findByReceiverId(receiverId);    }
+
+    @Override
     public Long saveTransaction(Transaction transaction) {
         return transactionDao.saveTransaction(transaction);
     }
