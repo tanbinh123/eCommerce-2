@@ -7,19 +7,31 @@
 <body>
 
 <div id="maxname" style="width:600px;">
+    <div id="head1" style="background-color:#BFC9CA;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/">Home Page</a>
+    </div>
+    <div id="head2" style="background-color:#73C6B6;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/user">用户管理</a>
+    </div>
+    <div id="head3" style="background-color:#A6ACAF;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/transaction">交易记录</a>
+    </div>
+    <div id="head4" style="background-color:#CCD1D1;height:20px;width:150px;float:left;text-align:center;">
+
+    </div>
     <div id="hname" style="background-color:#73C6B6;">
         <h1 style="margin-bottom:0;text-align:center;" >用户管理</h1>
     </div>
 
 
-    <div id="search" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
+    <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
         <b>搜索</b>
         <form name="input" action="/user" method="get">
             <p>id: <input type="text" name="id"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
     </div>
-    <div id="create" style="background-color:#99A3A4;height:200px;width:150px;float:left;">
+    <div id="body2" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
         <b>新建</b>
         <form action="#" th:action="@{/user}" th:object="${user}" method="post">
             <p>id: <input type="text" th:field="*{id}" /></p>
@@ -28,7 +40,7 @@
             <!--    <p><input type="reset" value="Reset" /></p>-->
         </form>
     </div>
-    <div id="delete" style="background-color:#A6ACAF;color:#5D6D7E;height:200px;width:150px;float:left;">
+    <div id="body3" style="background-color:#A6ACAF;height:200px;width:150px;float:left;">
         <b>删除</b>
         <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">
             <p>id: <input type="text" th:field="*{id}" /></p>
@@ -36,7 +48,7 @@
             <!--    <p><input type="reset" value="Reset" /></p>-->
         </form>
     </div>
-    <div id="searchTransaction" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
+    <div id="body4" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
 <!--        <b>搜索交易记录</b>-->
 <!--        <form name="input" action="/transaction" method="get">-->
 <!--            <p>id: <input type="text" name="id"/></p>-->
