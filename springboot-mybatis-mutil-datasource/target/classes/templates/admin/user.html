@@ -35,7 +35,6 @@
     </div>
     <div id="body2" style="background-color:#D7DBDD;height:200px;width:50px;float:left;">
         <b>新建 /</b>
-        <form action="#" th:action="@{/user}" th:object="${user}" method="post">
             <p>
                 <br/>
                 id:  <br/>
@@ -46,7 +45,6 @@
                 备注:
             </p>
 
-        </form>
     </div>
     <div id="body3" style="background-color:#D7DBDD;height:200px;width:250px;float:left;">
         <b>更新</b>
@@ -59,7 +57,9 @@
                 <input type="text" th:field="${user.city.phoneNumber}" /><br/>
                 <input type="text" th:field="${user.city.cityName}" /><br/>
                 <input type="text" th:field="${user.city.address}" /><br/>
-                <input type="text" th:field="${user.city.description}" /><input type="submit" value="提交" />
+                <input type="text" th:field="${user.city.description}" />
+
+                <input type="submit" value="提交" />
             </p>
 
         </form>
@@ -76,7 +76,7 @@
         <b th:text="${host}" >user list</b>
         <table>
             <tr>
-                <th>ID</th>
+                <th>用户id</th>
                 <th>姓名</th>
                 <th>电话</th>
                 <th>城市</th>

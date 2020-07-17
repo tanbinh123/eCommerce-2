@@ -14,10 +14,10 @@ public interface CouponMarketDao {
 
     List<CouponMarket> listAll();
 
-//    CouponMarket findById(@Param("id") Long id);
-//
-//    Long saveCoupon(CouponMarket coupon);
-//
+    List<CouponMarket> findById(@Param("couponId") Long couponId);
+
+    Long saveCouponMarketId(CouponMarket coupon);
+
 //    Long updateCoupon(CouponMarket coupon);
 //
 //    Long deleteCoupon(Long id);

@@ -19,13 +19,13 @@ public class CouponMarketServiceImpl implements CouponMarketService {
     private CouponMarketDao couponMarketDao;
 
     @Override
-    public CouponMarket findCouponMarketById(Long id) {
-        return null;
+    public List<CouponMarket> findCouponMarketById(Long couponId) {
+        return couponMarketDao.findById(couponId);
     }
 
     @Override
-    public Long saveCouponMarket(CouponMarket couponMarket) {
-        return null;
+    public Long saveCouponMarketId(CouponMarket couponMarket) {
+        return couponMarketDao.saveCouponMarketId(couponMarket);
     }
 
     @Override

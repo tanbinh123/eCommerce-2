@@ -26,46 +26,51 @@
     </div>
 
 
-    <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
+    <div id="body1" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>搜索</b>
         <form name="input" action="/couponMarket" method="get">
-            <p>id: <input type="text" name="id"/></p>
+            <p>id: <input type="text" name="couponId"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
     </div>
-    <div id="body2" style="background-color:#D7DBDD;height:200px;width:50px;float:left;">
-        <b>新建 /</b>
-<!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
-<!--            <p>-->
-<!--                <br/>-->
-<!--                id:  <br/>-->
-<!--                姓名: <br/>-->
-<!--                电话: <br/>-->
-<!--                城市: <br/>-->
-<!--                地址: <br/>-->
-<!--                备注:-->
-<!--            </p>-->
+    <div id="body2" style="background-color:#D7DBDD;height:250px;width:100px;float:left;">
+        <b>新建 / 更新</b>
+            <p>
+                <br/>
+                券id:  <br/>
+                券名: <br/>
+                是否上线: <br/>
+                金额门槛: <br/>
+                抵扣金额: <br/>
+                数量:<br/>
+<!--                过期时间:<br/>-->
+                详细说明:<br/>
+            </p>
 
-<!--        </form>-->
+
     </div>
-    <div id="body3" style="background-color:#D7DBDD;height:200px;width:250px;float:left;">
-        <b>更新</b>
+    <div id="body3" style="background-color:#D7DBDD;height:250px;width:200px;float:left;">
+        <br/>
 
-<!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
-<!--            <p>-->
-<!--                <br/>-->
-<!--                <input type="text" th:field="*{id}" /><br/>-->
-<!--                <input type="text" th:field="*{userName}" /><br/>-->
-<!--                <input type="text" th:field="${user.city.phoneNumber}" /><br/>-->
-<!--                <input type="text" th:field="${user.city.cityName}" /><br/>-->
-<!--                <input type="text" th:field="${user.city.address}" /><br/>-->
-<!--                <input type="text" th:field="${user.city.description}" /><input type="submit" value="提交" />-->
-<!--            </p>-->
+        <form action="#" th:action="@{/couponMarket}" th:object="${couponMarket}" method="post">
+            <p>
+                <br/>
+                <input type="text" th:field="*{couponId}" /><br/>
+                <input type="text" th:field="*{couponName}" /><br/>
+                <input type="text" th:field="*{couponOnsale}" /><br/>
+                <input type="text" th:field="*{thresholdPrice}" /><br/>
+                <input type="text" th:field="*{equivalentPrice}" /><br/>
+                <input type="text" th:field="*{couponQuantity}" /><br/>
+<!--                <input type="text" th:field="*{expireDate}" /><br/>-->
+                <input type="text" th:field="*{couponDescription}"/>
 
-<!--        </form>-->
+                <input type="submit" value="提交" />
+            </p>
+
+        </form>
     </div>
 
-    <div id="body4" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
+    <div id="body4" style="background-color:#CCD1D1;height:250px;width:150px;float:left;">
 <!--        <b>删除</b>-->
 <!--        <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">-->
 <!--            <p>id: <input type="text" th:field="*{id}" /></p>-->
@@ -78,7 +83,7 @@
             <tr>
                 <th>ID</th>
                 <th>券名</th>
-                <th>状态</th>
+                <th>是否上线</th>
                 <th>金额门槛</th>
                 <th>抵扣金额</th>
                 <th>数量</th>
@@ -93,10 +98,8 @@
                 <td th:text="${CouponMarket.getThresholdPrice()}">1</td>
                 <td th:text="${CouponMarket.getEquivalentPrice()}">1</td>
                 <td th:text="${CouponMarket.getCouponQuantity()}">1</td>
+                <td th:text="${CouponMarket.getExpireDate()}">1</td>
                 <td th:text="${CouponMarket.getCouponDescription()}">1</td>
-
-
-
 
             </tr>
         </table>

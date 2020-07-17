@@ -11,10 +11,16 @@ import java.util.List;
 public interface CouponMarketService {
 
 
+    /**
+     * 根据 ID,查询信息
+     *
+     * @param couponId
+     * @return
+     */
+    List<CouponMarket> findCouponMarketById(Long couponId);
 
-    CouponMarket findCouponMarketById(Long id);
 
-    Long saveCouponMarket(CouponMarket couponMarket);
+    Long saveCouponMarketId(CouponMarket couponMarket);
 
     List<CouponMarket> listAll();
 

@@ -37,12 +37,12 @@
 		from coupon_market
 	</select>
 
-<!--	<insert id="saveCouponMarket" parameterMap="CouponMarket" useGeneratedKeys="true" keyProperty="id">-->
-<!--		insert into-->
-<!--			coupon_market(coupon_id,coupon_name)-->
-<!--		values-->
-<!--			(#{id},#{couponName})-->
-<!--	</insert>-->
+	<insert id="saveCouponMarketId" parameterMap="CouponMarket" useGeneratedKeys="true" keyProperty="id">
+		insert into
+			coupon_market(coupon_id, coupon_onsale, threshold_price, equivalent_price, coupon_quantity)
+		values
+			(#{couponId},#{couponOnsale},#{thresholdPrice},#{equivalentPrice},#{couponQuantity})
+	</insert>
 
 
 <!--	<update id="updateCouponMarket" parameterMap="CouponMarket">-->

@@ -21,7 +21,7 @@ public class CouponMarket {
 
     private double equivalentPrice;
 
-    private long couponQuantity;
+    private Long couponQuantity;
 
     private Date expireDate;
 
@@ -73,11 +73,11 @@ public class CouponMarket {
         this.equivalentPrice = equivalentPrice;
     }
 
-    public long getCouponQuantity() {
+    public Long getCouponQuantity() {
         return couponQuantity;
     }
 
-    public void setCouponQuantity(int couponQuantity) {
+    public void setCouponQuantity(Long couponQuantity) {
         this.couponQuantity = couponQuantity;
     }
 
