@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>优惠券市场</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<div id="maxname" style="width:600px;">
+    <div id="head1" style="background-color:#7DCEA0;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/">主页</a>
+    </div>
+    <div id="head2" style="background-color:#73C6B6;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/user">用户管理</a>
+    </div>
+    <div id="head3" style="background-color:#76D7C4;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/transaction">交易记录</a>
+    </div>
+    <div id="head4" style="background-color:#58D68D;height:20px;width:150px;float:left;text-align:center;">
+
+    </div>
+
+
+    <div id="hname" style="background-color:#58D68D;">
+        <h1 style="margin-bottom:0;text-align:center;" >优惠券市场管理</h1>
+    </div>
+
+
+    <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
+        <b>搜索</b>
+        <form name="input" action="/couponMarket" method="get">
+            <p>id: <input type="text" name="id"/></p>
+            <p><input type="submit" value="搜索"/></p>
+        </form>
+    </div>
+    <div id="body2" style="background-color:#D7DBDD;height:200px;width:50px;float:left;">
+        <b>新建 /</b>
+<!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
+<!--            <p>-->
+<!--                <br/>-->
+<!--                id:  <br/>-->
+<!--                姓名: <br/>-->
+<!--                电话: <br/>-->
+<!--                城市: <br/>-->
+<!--                地址: <br/>-->
+<!--                备注:-->
+<!--            </p>-->
+
+<!--        </form>-->
+    </div>
+    <div id="body3" style="background-color:#D7DBDD;height:200px;width:250px;float:left;">
+        <b>更新</b>
+
+<!--        <form action="#" th:action="@{/user}" th:object="${user}" method="post">-->
+<!--            <p>-->
+<!--                <br/>-->
+<!--                <input type="text" th:field="*{id}" /><br/>-->
+<!--                <input type="text" th:field="*{userName}" /><br/>-->
+<!--                <input type="text" th:field="${user.city.phoneNumber}" /><br/>-->
+<!--                <input type="text" th:field="${user.city.cityName}" /><br/>-->
+<!--                <input type="text" th:field="${user.city.address}" /><br/>-->
+<!--                <input type="text" th:field="${user.city.description}" /><input type="submit" value="提交" />-->
+<!--            </p>-->
+
+<!--        </form>-->
+    </div>
+
+    <div id="body4" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
+<!--        <b>删除</b>-->
+<!--        <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">-->
+<!--            <p>id: <input type="text" th:field="*{id}" /></p>-->
+<!--            <p><input type="submit" value="删除" /></p>-->
+<!--        </form>-->
+    </div>
+    <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
+        <b th:text="${host}" >券列表</b>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>券名</th>
+                <th>状态</th>
+                <th>金额门槛</th>
+                <th>抵扣金额</th>
+                <th>数量</th>
+                <th>过期时间</th>
+                <th>详细说明</th>
+
+            </tr>
+            <tr th:each="CouponMarket : ${list}">
+                <td th:text="${CouponMarket.getCouponId()}">1</td>
+                <td th:text="${CouponMarket.getCouponName()}">1</td>
+                <td th:text="${CouponMarket.isCouponOnsale()}">1</td>
+                <td th:text="${CouponMarket.getThresholdPrice()}">1</td>
+                <td th:text="${CouponMarket.getEquivalentPrice()}">1</td>
+                <td th:text="${CouponMarket.getCouponQuantity()}">1</td>
+                <td th:text="${CouponMarket.getCouponDescription()}">1</td>
+
+
+
+
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
