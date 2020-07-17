@@ -3,6 +3,7 @@ package org.spring.springboot.dao.master;
 import org.apache.ibatis.annotations.*;
 import org.spring.springboot.domain.CouponMarket;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,20 +23,25 @@ public interface CouponMarketDao {
 //
 //    Long deleteCoupon(Long id);
 //
-//    @Update("UPDATE coupon SET coupon_name = #{couponName} WHERE id = #{userId}")
-//    int updateCouponName(@Param("couponName") String couponName, @Param("userId") long userId);
-//
-//    @Update("UPDATE coupon SET address = #{address} WHERE id = #{userId}")
-//    int updateAddress(@Param("address") String address, @Param("userId") long userId);
-//
-//    @Update("UPDATE coupon SET description = #{description} WHERE id = #{userId}")
-//    int updateDescription(@Param("description") String description, @Param("userId") long userId);
-//
-//    @Update("UPDATE coupon SET province_id = #{provinceId} WHERE id = #{userId}")
-//    int updateProvinceId(@Param("provinceId") Long provinceId, @Param("userId") long userId);
-//
-//    @Update("UPDATE coupon SET phonenumber = #{phoneNumber} WHERE id = #{userId}")
-//    int updatePhoneNumber(@Param("phoneNumber") Long phoneNumber, @Param("userId") long userId);
+    @Update("UPDATE coupon_market SET coupon_name = #{couponName} WHERE coupon_id = #{couponId}")
+    int updateCouponName(@Param("couponName") String couponName, @Param("couponId") long couponId);
 
+    @Update("UPDATE coupon_market SET coupon_onsale = #{couponOnsale} WHERE coupon_id = #{couponId}")
+    int updateOnsale(@Param("couponOnsale") boolean couponOnsale, @Param("couponId") long couponId);
+
+    @Update("UPDATE coupon_market SET threshold_price = #{thresholdPrice} WHERE coupon_id = #{couponId}")
+    int updateThresholdPrice(@Param("thresholdPrice") double thresholdPrice, @Param("couponId") long couponId);
+
+    @Update("UPDATE coupon_market SET equivalent_price = #{equivalentPrice} WHERE coupon_id = #{couponId}")
+    int updateEquivalentPrice(@Param("equivalentPrice") double equivalentPrice, @Param("couponId") long couponId);
+
+    @Update("UPDATE coupon_market SET coupon_quantity = #{couponQuantity} WHERE coupon_id = #{couponId}")
+    int updateQuantity(@Param("couponQuantity") Long couponQuantity, @Param("couponId") long couponId);
+
+    @Update("UPDATE coupon_market SET coupon_description = #{couponDescription} WHERE coupon_id = #{couponId}")
+    int updateDescription(@Param("couponDescription") String couponDescription, @Param("couponId") long couponId);
+
+    @Update("UPDATE coupon_market SET expire_date = #{expireDate} WHERE coupon_id = #{couponId}")
+    int updateExpireDate(@Param("expireDate") Date expireDate, @Param("couponId") long couponId);
 
 }
