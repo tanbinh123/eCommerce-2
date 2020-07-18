@@ -33,39 +33,73 @@
             <p><input type="submit" value="搜索"/></p>
         </form>
     </div>
-    <div id="body2" style="background-color:#D7DBDD;height:250px;width:100px;float:left;">
-        <b>新建 / 更新</b>
-            <p>
-                <br/>
-                券id:  <br/>
-                券名: <br/>
-                是否上线: <br/>
-                金额门槛: <br/>
-                抵扣金额: <br/>
-                数量:<br/>
+<!--    <div id="body2" style="background-color:#D7DBDD;height:250px;width:100px;float:left;">-->
+<!--        <b>新建 / 更新</b>-->
+<!--            <p>-->
+<!--                <br/>-->
+<!--                券id:  <br/>-->
+<!--                券名: <br/>-->
+<!--                是否上线: <br/>-->
+<!--                金额门槛: <br/>-->
+<!--                抵扣金额: <br/>-->
+<!--                数量:<br/>-->
 <!--                过期时间:<br/>-->
-                详细说明:<br/>
-            </p>
+<!--                详细说明:<br/>-->
+<!--            </p>-->
 
 
-    </div>
-    <div id="body3" style="background-color:#D7DBDD;height:250px;width:200px;float:left;">
+<!--    </div>-->
+    <div id="body3" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
+
+        <b>新建 / 更新</b>
         <br/>
-
+        <br/>
         <form action="#" th:action="@{/couponMarket}" th:object="${couponMarket}" method="post">
-            <p>
-                <br/>
-                <input type="text" th:field="*{couponId}" /><br/>
-                <input type="text" th:field="*{couponName}" /><br/>
-                <input type="text" th:field="*{couponOnsale}" /><br/>
-                <input type="text" th:field="*{thresholdPrice}" /><br/>
-                <input type="text" th:field="*{equivalentPrice}" /><br/>
-                <input type="text" th:field="*{couponQuantity}" /><br/>
-<!--                <input type="text" th:field="*{expireDate}" /><br/>-->
-                <input type="text" th:field="*{couponDescription}"/>
 
-                <input type="submit" value="提交" />
-            </p>
+            <table>
+                <tr>
+                    <td>券id：</td>
+                    <td><input type="text" th:field="*{couponId}" /></td>
+                </tr>
+                <tr>
+                    <td>券名：</td>
+                    <td><input type="text" th:field="*{couponName}" /><br/></td>
+                </tr>
+                <tr>
+                    <td>是否上线：</td>
+                    <td>
+                        <input list="couponOnsale" th:field="*{couponOnsale}" />
+                        <datalist id="couponOnsale">
+                            <option value="true"/>
+                            <option value="false"/>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>金额门槛：</td>
+                    <td><input type="text" th:field="*{thresholdPrice}" /></td>
+                </tr>
+                <tr>
+                    <td>抵扣金额：</td>
+                    <td><input type="text" th:field="*{equivalentPrice}" /></td>
+                </tr>
+                <tr>
+                    <td>数量：</td>
+                    <td><input type="text" th:field="*{couponQuantity}" /></td>
+                </tr>
+                <tr>
+                    <td>过期时间：</td>
+<!--                    <td><input type="datetime-local" th:field="*{expireDate}" /></td>-->
+                </tr>
+                <tr>
+                    <td>详细说明：</td>
+                    <td><input type="text" th:field="*{couponDescription}"/></td>
+                    <td><input type="submit" value="提交" /></td>
+                </tr>
+
+
+
+            </table>
 
         </form>
     </div>
@@ -79,7 +113,7 @@
     </div>
     <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
         <b th:text="${host}" >券列表</b>
-        <table>
+        <table border="1">
             <tr>
                 <th>ID</th>
                 <th>券名</th>
