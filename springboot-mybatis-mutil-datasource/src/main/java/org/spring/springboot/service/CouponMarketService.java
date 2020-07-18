@@ -24,7 +24,7 @@ public interface CouponMarketService {
 
     List<CouponMarket> listAll();
 
-    Long deleteCouponMarket(Long id);
+    Long deleteCouponMarket(Long couponId);
 
     Long checkCouponMarketIsExpired();
 

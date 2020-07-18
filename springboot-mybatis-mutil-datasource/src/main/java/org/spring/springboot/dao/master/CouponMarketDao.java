@@ -21,8 +21,8 @@ public interface CouponMarketDao {
 
 //    Long updateCoupon(CouponMarket coupon);
 //
-//    Long deleteCoupon(Long id);
-//
+    Long deleteCoupon(Long couponId);
+
 
     @Update("UPDATE coupon_market SET coupon_onsale = '0' WHERE coupon_onsale = '1' AND expire_date <= NOW()")
     Long checkCouponMarketIsExpired();

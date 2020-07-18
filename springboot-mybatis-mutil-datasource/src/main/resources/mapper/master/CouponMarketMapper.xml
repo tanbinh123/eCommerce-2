@@ -56,7 +56,7 @@
 <!--			coupon_id = #{id}-->
 <!--	</update>-->
 
-	<delete id="deleteCouponMarket" parameterType="java.lang.Long">
+	<delete id="deleteCoupon" parameterType="java.lang.Long">
 		delete from
 			coupon_market
 		where

@@ -74,16 +74,14 @@ public class CouponMarketController {
 
         return "redirect:/couponMarket";
     }
-//
-//    @PostMapping("/couponMarketDelete")
-//    public String deleteUser(Model model, @ModelAttribute User user) {
-//        if(user.getId() == null){
-//            return "admin/inputWarning";
-//        }
-//        couponMarketService.deleteUser(user.getId());
-//        cityService.deleteCity(user.getId());
-//        walletService.deleteWallet(user.getId());
-//        return "redirect:/couponMarket";
-//    }
+
+    @PostMapping("/couponMarketDelete")
+    public String deleteUser(Model model, @ModelAttribute CouponMarket couponMarket) {
+        if(couponMarket.getCouponId() == null){
+            return "admin/inputWarning";
+        }
+        couponMarketService.deleteCouponMarket(couponMarket.getCouponId());
+        return "redirect:/couponMarket";
+    }
 
 }

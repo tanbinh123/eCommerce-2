@@ -34,8 +34,8 @@ public class CouponMarketServiceImpl implements CouponMarketService {
     }
 
     @Override
-    public Long deleteCouponMarket(Long id) {
-        return null;
+    public Long deleteCouponMarket(Long couponId) {
+        return couponMarketDao.deleteCoupon(couponId);
     }
 
     @Override
