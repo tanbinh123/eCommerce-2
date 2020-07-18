@@ -23,6 +23,10 @@ public interface CouponMarketDao {
 //
 //    Long deleteCoupon(Long id);
 //
+
+    @Update("UPDATE coupon_market SET coupon_onsale = '0' WHERE coupon_onsale = '1' AND expire_date <= NOW()")
+    Long checkCouponMarketIsExpired();
+
     @Update("UPDATE coupon_market SET coupon_name = #{couponName} WHERE coupon_id = #{couponId}")
     int updateCouponName(@Param("couponName") String couponName, @Param("couponId") long couponId);
 

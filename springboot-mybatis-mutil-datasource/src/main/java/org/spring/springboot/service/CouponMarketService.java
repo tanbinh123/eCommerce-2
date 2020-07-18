@@ -26,5 +26,6 @@ public interface CouponMarketService {
 
     Long deleteCouponMarket(Long id);
 
+    Long checkCouponMarketIsExpired();
 
 }

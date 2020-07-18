@@ -38,4 +38,10 @@ public class CouponMarketServiceImpl implements CouponMarketService {
         return null;
     }
 
+    @Override
+    public Long checkCouponMarketIsExpired() {
+        return couponMarketDao.checkCouponMarketIsExpired();
+    }
+
+
 }
