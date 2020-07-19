@@ -22,7 +22,8 @@ public class ScheduledTasks {
 //        System.out.println("当前时间：" + dateFormat.format(new Date()));
 //    }
 
-    @Scheduled(fixedRate = 100000)
+    @Scheduled(fixedRate = 900000)//900000 => per 15min
+    //reference:https://www.jianshu.com/p/4d9c9b08111d
     public void checkCouponMarcketIsExpired(){
         System.out.println(dateFormat.format(new Date()) + " Check if coupon in market is expired.");
         couponMarketService.checkCouponMarketIsExpired();
