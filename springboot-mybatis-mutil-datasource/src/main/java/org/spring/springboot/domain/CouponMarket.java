@@ -5,7 +5,6 @@ import java.util.Date;
 /**
  * 实体类
  *
- * Created by bysocket on 07/02/2017.
  */
 public class CouponMarket {
 

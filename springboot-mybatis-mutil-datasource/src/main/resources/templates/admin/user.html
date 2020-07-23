@@ -19,7 +19,9 @@
     <div id="head4" style="background-color:#58D68D;height:20px;width:150px;float:left;text-align:center;">
         <a href="/couponMarket">优惠券市场</a>
     </div>
-
+    <div id="head5" style="background-color:#35c0cd;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/productManagement">商品管理</a>
+    </div>
 
     <div id="hname" style="background-color:#73C6B6;">
         <h1 style="margin-bottom:0;text-align:center;" >用户管理</h1>
@@ -46,7 +48,7 @@
             </p>
 
     </div>
-    <div id="body3" style="background-color:#D7DBDD;height:200px;width:250px;float:left;">
+    <div id="body3" style="background-color:#BFC9CA;height:200px;width:250px;float:left;">
         <b>更新</b>
 
         <form action="#" th:action="@{/user}" th:object="${user}" method="post">
@@ -65,7 +67,7 @@
         </form>
     </div>
 
-    <div id="body4" style="background-color:#CCD1D1;height:200px;width:150px;float:left;">
+    <div id="body4" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
         <b>删除</b>
         <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">
             <p>id: <input type="text" th:field="*{id}" /></p>

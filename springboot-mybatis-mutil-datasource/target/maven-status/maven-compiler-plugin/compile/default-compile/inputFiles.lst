@@ -1,5 +1,7 @@
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/ProductManagementDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/config/ds/MasterDataSourceConfig.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/Transaction.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/ProductManagementService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/WalletService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/task/ScheduledTasks.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/CouponMarketService.java
@@ -9,6 +11,7 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/TransactionController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/UserController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/CityService.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/Product.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/CityRestController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/impl/WalletServiceImpl.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/impl/CouponMarketServiceImpl.java
@@ -27,4 +30,6 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/UserService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/UserDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/cluster/TransactionDao.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/impl/ProductManagementServiceImpl.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/TransactionService.java

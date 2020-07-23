@@ -3,7 +3,6 @@ package org.spring.springboot.domain;
 /**
  * 钱包实体类
  *
- * Created by bysocket on 07/02/2017.
  */
 public class Wallet {
 

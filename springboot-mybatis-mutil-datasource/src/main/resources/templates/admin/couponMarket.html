@@ -17,9 +17,10 @@
         <a href="/transaction">交易记录</a>
     </div>
     <div id="head4" style="background-color:#58D68D;height:20px;width:150px;float:left;text-align:center;">
-
     </div>
-
+    <div id="head5" style="background-color:#35c0cd;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/productManagement">商品管理</a>
+    </div>
 
     <div id="hname" style="background-color:#58D68D;">
         <h1 style="margin-bottom:0;text-align:center;" >优惠券市场管理</h1>
@@ -49,7 +50,7 @@
 
 
 <!--    </div>-->
-    <div id="body3" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
+    <div id="body3" style="background-color:#BFC9CA;height:250px;width:300px;float:left;">
 
         <b>新建 / 更新</b>
         <br/>
@@ -99,7 +100,7 @@
         </form>
     </div>
 
-    <div id="body4" style="background-color:#CCD1D1;height:250px;width:150px;float:left;">
+    <div id="body4" style="background-color:#D7DBDD;height:250px;width:150px;float:left;">
         <b>删除</b>
         <form action="#" th:action="@{/couponMarketDelete}" th:object="${couponMarket}" method="post">
             <p>id: <input type="text" th:field="*{couponId}" /></p>

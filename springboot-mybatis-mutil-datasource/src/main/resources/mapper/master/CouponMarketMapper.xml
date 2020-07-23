@@ -6,6 +6,7 @@
 		<result column="coupon_name" property="couponName" />
 		<result column="coupon_onsale" property="couponOnsale" />
 		<result column="threshold_price" property="thresholdPrice" />
+		<result column="equivalent_price" property="equivalentPrice" />
 		<result column="coupon_description" property="couponDescription" />
 		<result column="coupon_quantity" property="couponQuantity" />
 		<result column="expire_date" property="expireDate" />

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.spring.springboot.dao.master.ProductDao">
+	<resultMap id="BaseResultMap" type="org.spring.springboot.domain.Product">
+		<result column="product_id" property="productId" />
+		<result column="product_name" property="productName" />
+		<result column="product_onsale" property="productOnsale" />
+		<result column="product_price" property="productPrice" />
+		<result column="product_description" property="productDescription" />
+		<result column="product_quantity" property="productQuantity" />
+		<result column="product_tag" property="productTag" />
+	</resultMap>
+
+	<parameterMap id="ProductManagement" type="org.spring.springboot.domain.Product"/>
+
+	<sql id="Base_Column_List">
+		product_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag
+	</sql>
+
+<!--	<select id="findByName" resultMap="BaseResultMap" parameterType="java.lang.String">-->
+<!--		select-->
+<!--		<include refid="Base_Column_List" />-->
+<!--		from product_market-->
+<!--		where product_name like #{productName}-->
+<!--	</select>-->
+
+	<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from product
+		where product_id like #{productId}
+	</select>
+
+	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from product
+	</select>
+
+	<insert id="saveProductById" parameterMap="Product" useGeneratedKeys="true" keyProperty="id">
+		insert into
+			product(product_id, product_onsale, threshold_price, equivalent_price, product_quantity)
+		values
+			(#{productId},#{productOnsale},#{thresholdPrice},#{equivalentPrice},#{productQuantity})
+	</insert>
+
+
+<!--	<update id="updateProductManagement" parameterMap="ProductManagement">-->
+<!--		update-->
+<!--		product-->
+<!--		set-->
+<!--		<if test="productName != null and '' != productName">-->
+<!--			product_name = #{productName}-->
+<!--		</if>-->
+<!--		where-->
+<!--			product_id = #{id}-->
+<!--	</update>-->
+
+	<delete id="deleteProduct" parameterType="java.lang.Long">
+		delete from
+			product
+		where
+			product_id = #{productId}
+	</delete>
+
+</mapper>
