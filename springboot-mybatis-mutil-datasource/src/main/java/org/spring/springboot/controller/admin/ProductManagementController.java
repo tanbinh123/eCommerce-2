@@ -27,7 +27,7 @@ public class ProductManagementController {
 
     @GetMapping("/productManagement")
     public String listAllProductInMarket(Long productId, Model model) {
-        model.addAttribute("product", new Product());
+        model.addAttribute("Product", new Product());
         List<Product> list;
         if (productId != null){
             model.addAttribute("host", "搜索结果");
@@ -77,7 +77,7 @@ public class ProductManagementController {
         return "redirect:/productManagement";
     }
 
-    @PostMapping("/productManagementDelete")
+    @PostMapping("/productDelete")
     public String deleteUser(Model model, @ModelAttribute Product product) {
         if(product.getProductId() == null){
             return "admin/inputWarning";

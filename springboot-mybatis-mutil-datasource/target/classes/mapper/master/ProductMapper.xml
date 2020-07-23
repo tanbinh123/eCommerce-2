@@ -11,7 +11,7 @@
 		<result column="product_tag" property="productTag" />
 	</resultMap>
 
-	<parameterMap id="ProductManagement" type="org.spring.springboot.domain.Product"/>
+	<parameterMap id="Product" type="org.spring.springboot.domain.Product"/>
 
 	<sql id="Base_Column_List">
 		product_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag

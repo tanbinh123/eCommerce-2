@@ -15,8 +15,7 @@ public class HomepageController {
 
 
     @GetMapping("/")
-    public String findByTransactionId(Long id, Model model) {
-
+    public String findById(Long id, Model model) {
 
         return "admin/homepage";
 

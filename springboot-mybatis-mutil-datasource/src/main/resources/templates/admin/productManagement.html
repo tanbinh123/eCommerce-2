@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<div id="maxname" style="width:600px;">
+<div id="maxname" style="width:750px;">
     <div id="head1" style="background-color:#7DCEA0;height:20px;width:150px;float:left;text-align:center;">
         <a href="/">主页</a>
     </div>
@@ -17,13 +17,15 @@
         <a href="/transaction">交易记录</a>
     </div>
     <div id="head4" style="background-color:#58D68D;height:20px;width:150px;float:left;text-align:center;">
+        <a href="/couponMarket">优惠券市场</a>
+
     </div>
     <div id="head5" style="background-color:#35c0cd;height:20px;width:150px;float:left;text-align:center;">
-        <a href="/productManagement">商品管理</a>
+<!--        <a href="/productManagement">商品管理</a>-->
     </div>
 
-    <div id="hname" style="background-color:#58D68D;">
-        <h1 style="margin-bottom:0;text-align:center;" >优惠券市场管理</h1>
+    <div id="hname" style="background-color:#35c0cd;">
+        <h1 style="margin-bottom:0;text-align:center;" >商品管理</h1>
     </div>
 
 
@@ -55,7 +57,7 @@
         <b>新建 / 更新</b>
         <br/>
         <br/>
-        <form action="#" th:action="@{/productManagement}" th:object="${product}" method="post">
+        <form action="#" th:action="@{/productManagement}" th:object="${Product}" method="post">
 
             <table>
                 <tr>
@@ -68,7 +70,7 @@
                 </tr>
                 <tr>
                     <td>是否上线：</td>
-                    <td><input type="text" th:field="*{couponOnsale}" /></td>
+                    <td><input type="text" th:field="*{productOnsale}" /></td>
                 </tr>
                 <tr>
                     <td>价格：</td>
@@ -97,11 +99,15 @@
 
     <div id="body4" style="background-color:#D7DBDD;height:250px;width:150px;float:left;">
         <b>删除</b>
-        <form action="#" th:action="@{/productDelete}" th:object="${product}" method="post">
+        <form action="#" th:action="@{/productDelete}" th:object="${Product}" method="post">
             <p>id: <input type="text" th:field="*{productId}" /></p>
             <p><input type="submit" value="删除" /></p>
         </form>
     </div>
+
+    <div id="body5" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
+    </div>
+
     <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
         <b th:text="${host}" >券列表</b>
         <table border="1">

@@ -19,7 +19,6 @@ public interface ProductManagementService {
      */
     List<Product> findProductById(Long productId);
 
-
     Long saveProductId(Product product);
 
     List<Product> listAll();
