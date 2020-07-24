@@ -7,10 +7,7 @@ import org.spring.springboot.service.ProductManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,16 +23,11 @@ public class ProductManagementController {
     private ProductDao productDao;
 
     @GetMapping("/productManagement")
-    public String listAllProductInMarket(Long productId, Model model) {
+    public String listAllProductInMarket(Long productId, String productName, String productTag, Model model) {
         model.addAttribute("Product", new Product());
         List<Product> list;
-        if (productId != null){
-            model.addAttribute("host", "搜索结果");
-            list = productManagementService.findProductById(productId);
-        }else{
-            model.addAttribute("host", "所有优惠券");
-            list = productManagementService.listAll();
-        }
+        model.addAttribute("host", "搜索结果");
+        list = productManagementService.searchProduct(productId, productName, productTag);
         model.addAttribute("list", list);
         return "admin/productManagement";
     }

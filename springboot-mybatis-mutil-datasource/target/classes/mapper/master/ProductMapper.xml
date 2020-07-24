@@ -31,6 +31,24 @@
 		where product_id like #{productId}
 	</select>
 
+
+	<select id="searchProduct" resultMap="BaseResultMap" parameterMap="Product">
+		select
+		<include refid="Base_Column_List" />
+		from product
+		where
+			1 = 1
+		<if test="productId!=null">
+			AND product_id = #{productId}
+		</if>
+		<if test="productName!=null and productName!=''">
+			AND product_name LIKE CONCAT('%',#{productName},'%')
+		</if>
+		<if test="productTag!=null and productTag!=''">
+			AND product_tag LIKE CONCAT('%',#{productTag},'%')
+		</if>
+	</select>
+
 	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List" />

@@ -5,11 +5,10 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Update;
 import org.spring.springboot.domain.Product;
 
-import java.util.Date;
 import java.util.List;
 
 /**
- * 城市 DAO 接口类
+ *  DAO 接口类
  *
  */
 @Mapper
@@ -19,10 +18,12 @@ public interface ProductDao {
 
     List<Product> findById(@Param("productId") Long productId);
 
+    List<Product> searchProduct(Product product);
+
     Long saveProductById(Product product);
 
 //    Long updateProduct(Product product);
-//
+
     Long deleteProduct(Long productId);
 
 

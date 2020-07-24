@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 城市 DAO 接口类
+ *  DAO 接口类
  *
  */
 @Mapper

@@ -19,6 +19,8 @@ public interface ProductManagementService {
      */
     List<Product> findProductById(Long productId);
 
+    List<Product> searchProduct(Long productId, String productName, String productTag);
+
     Long saveProductId(Product product);
 
     List<Product> listAll();

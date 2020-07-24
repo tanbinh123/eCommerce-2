@@ -34,23 +34,8 @@
             <p><input type="submit" value="搜索"/></p>
         </form>
     </div>
-<!--    <div id="body2" style="background-color:#D7DBDD;height:250px;width:100px;float:left;">-->
-<!--        <b>新建 / 更新</b>-->
-<!--            <p>-->
-<!--                <br/>-->
-<!--                券id:  <br/>-->
-<!--                券名: <br/>-->
-<!--                是否上线: <br/>-->
-<!--                金额门槛: <br/>-->
-<!--                抵扣金额: <br/>-->
-<!--                数量:<br/>-->
-<!--                过期时间:<br/>-->
-<!--                详细说明:<br/>-->
-<!--            </p>-->
 
-
-<!--    </div>-->
-    <div id="body3" style="background-color:#BFC9CA;height:250px;width:300px;float:left;">
+    <div id="body2" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
 
         <b>新建 / 更新</b>
         <br/>
@@ -92,15 +77,13 @@
                     <td><input type="text" th:field="*{couponDescription}"/></td>
                     <td><input type="submit" value="提交" /></td>
                 </tr>
-
-
-
+                
             </table>
 
         </form>
     </div>
 
-    <div id="body4" style="background-color:#D7DBDD;height:250px;width:150px;float:left;">
+    <div id="body3" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>删除</b>
         <form action="#" th:action="@{/couponMarketDelete}" th:object="${couponMarket}" method="post">
             <p>id: <input type="text" th:field="*{couponId}" /></p>
@@ -108,7 +91,7 @@
         </form>
     </div>
 
-    <div id="body5" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
+    <div id="body4" style="background-color:#D7DBDD;height:250px;width:150px;float:left;">
 
     </div>
 
