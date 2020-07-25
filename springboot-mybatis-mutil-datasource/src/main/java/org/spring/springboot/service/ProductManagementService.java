@@ -21,6 +21,8 @@ public interface ProductManagementService {
 
     List<Product> searchProduct(Long productId, String productName, String productTag);
 
+    Long insertOrUpdateProduct(Product product);
+
     Long saveProductId(Product product);
 
     List<Product> listAll();

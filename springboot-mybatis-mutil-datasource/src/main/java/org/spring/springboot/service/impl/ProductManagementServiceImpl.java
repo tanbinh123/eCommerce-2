@@ -33,6 +33,37 @@ public class ProductManagementServiceImpl implements ProductManagementService {
     }
 
     @Override
+    public Long insertOrUpdateProduct(Product product) {
+        //test if there exist a product with same id
+        if (productDao.findById(product.getProductId()).isEmpty()){
+            //insert new product
+            //check if null for some key value
+            if (product.getProductQuantity() == null){
+                product.setProductQuantity((long)0);
+            }
+            return productDao.saveProductById(product);
+        }else{
+            //update product
+            //check if not null then update
+            long productId = product.getProductId();
+
+            if (product.getProductName() != null && (! product.getProductName().equals(""))){
+                productDao.updateProductName(product.getProductName(),productId);
+            }
+            productDao.updateOnsale(product.isProductOnsale(),productId);
+            productDao.updateProductPrice(product.getProductPrice(),productId);
+            if (product.getProductDescription() != null && (! product.getProductDescription().equals(""))){
+                productDao.updateDescription(product.getProductDescription(),productId);
+            }
+            productDao.updateQuantity(product.getProductQuantity(),productId);
+            if (product.getProductTag() != null && (! product.getProductTag().equals(""))){
+                productDao.updateTag(product.getProductTag(),productId);
+            }
+            return (long)0;
+        }
+    }
+
+    @Override
     public Long saveProductId(Product product) {
         return productDao.saveProductById(product);
     }
@@ -46,5 +77,6 @@ public class ProductManagementServiceImpl implements ProductManagementService {
     public Long deleteProduct(Long productId) {
         return productDao.deleteProduct(productId);
     }
+
 
 }

@@ -35,43 +35,23 @@ public class ProductManagementController {
 
 
     @PostMapping("/productManagement")
-    public String userRegistrationOrUpdate(Model model, @ModelAttribute Product product) {
-        if((product.getProductId() == null)||product.getProductQuantity() == null ){
+    public String productInsertOrUpdate(Model model, @ModelAttribute Product product) {
+        if((product.getProductId() == null)){
+            model.addAttribute("host", "ID不能为空");
+            return "admin/inputWarning";
+        }else if(product.getProductQuantity() == null ){
+            model.addAttribute("host", "商品数量不能为空");
             return "admin/inputWarning";
         }
-//        if(productManagementService.findProductById(product.getProductId()).isEmpty()){
-//            productManagementService.saveProductId(product);
-//        }else{
-//
-//            //test if posted in productManagement's params are not null
-//
-//            if(product.getProductName() != null && product.getProductName() != "" ) {
-//                productDao.updateProductName(product.getProductName(), product.getProductId());
-//            }
-//
-//            if(product.getProductQuantity() != null) {
-//                productDao.updateQuantity(product.getProductQuantity(), product.getProductId());
-//            }
-//
-//            if(product.getExpireDate() != null){
-//                //TODO
-//            }
-//
-//            if(product.getProductDescription() != null && product.getProductDescription() != ""){
-//                productDao.updateDescription(product.getProductDescription(), product.getProductId());
-//            }
-//
-//            productDao.updateOnsale(product.isProductOnsale(), product.getProductId());
-//            productDao.updateProductPrice(product.getProductPrice(), product.getProductId());
-//
-//        }
 
+        productManagementService.insertOrUpdateProduct(product);
         return "redirect:/productManagement";
     }
 
     @PostMapping("/productDelete")
     public String deleteUser(Model model, @ModelAttribute Product product) {
         if(product.getProductId() == null){
+            model.addAttribute("host", "ID不能为空");
             return "admin/inputWarning";
         }
         productManagementService.deleteProduct(product.getProductId());

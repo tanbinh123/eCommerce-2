@@ -10,11 +10,11 @@ public class Product {
 
     private Long productId;
 
-    private String productName;
+    private String productName = null;
 
-    private String productTag;
+    private String productTag = null;
 
-    private String productDescription;
+    private String productDescription = null;
 
     private boolean productOnsale;
 
