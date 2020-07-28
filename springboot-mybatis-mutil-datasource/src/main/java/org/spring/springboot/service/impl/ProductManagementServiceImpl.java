@@ -5,6 +5,7 @@ import org.spring.springboot.domain.Product;
 import org.spring.springboot.service.ProductManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class ProductManagementServiceImpl implements ProductManagementService {
         return productDao.searchProduct(product);
     }
 
+    @Transactional
     @Override
     public Long insertOrUpdateProduct(Product product) {
         //test if there exist a product with same id
@@ -44,6 +46,8 @@ public class ProductManagementServiceImpl implements ProductManagementService {
             return productDao.saveProductById(product);
         }else{
             //update product
+            //x-lock
+            productDao.xlockById(product.getProductId());
             //check if not null then update
             long productId = product.getProductId();
 
