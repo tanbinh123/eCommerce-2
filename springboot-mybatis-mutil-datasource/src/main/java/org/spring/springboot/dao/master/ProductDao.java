@@ -28,6 +28,9 @@ public interface ProductDao {
     @Select("SELECT * FROM product WHERE product_id = #{productId} FOR UPDATE")
     int xlockById(@Param("productId") long productId);
 
+    @Update("UPDATE product SET product_type_id = #{productTypeId} WHERE product_id = #{productId}")
+    int updateProductTypeId(@Param("productTypeId") long productTypeId, @Param("productId") long productId);
+
     @Update("UPDATE product SET product_name = #{productName} WHERE product_id = #{productId}")
     int updateProductName(@Param("productName") String productName, @Param("productId") long productId);
 

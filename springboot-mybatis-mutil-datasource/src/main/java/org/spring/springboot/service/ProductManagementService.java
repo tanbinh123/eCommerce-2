@@ -19,7 +19,7 @@ public interface ProductManagementService {
      */
     List<Product> findProductById(Long productId);
 
-    List<Product> searchProduct(Long productId, String productName, String productTag);
+    List<Product> searchProduct(Long productId, String productName, String productTag, Long productTypeId);
 
     Long insertOrUpdateProduct(Product product);
 

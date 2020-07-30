@@ -10,6 +10,8 @@ public class Product {
 
     private Long productId;
 
+    private Long productTypeId;
+
     private String productName = null;
 
     private String productTag = null;
@@ -28,6 +30,14 @@ public class Product {
 
     public void setProductId(Long productId) {
         this.productId = productId;
+    }
+
+    public Long getProductTypeId() {
+        return productTypeId;
+    }
+
+    public void setProductTypeId(Long productTypeId) {
+        this.productTypeId = productTypeId;
     }
 
     public String getProductName() {

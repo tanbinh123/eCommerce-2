@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>优惠券市场</title>
+    <title>商品管理</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
 
-<div id="maxname" style="width:750px;">
+<div id="maxname" style="width:900px;">
     <div id="head1" style="background-color:#7DCEA0;height:20px;width:150px;float:left;text-align:center;">
         <a href="/">主页</a>
     </div>
@@ -23,16 +23,19 @@
     <div id="head5" style="background-color:#35c0cd;height:20px;width:150px;float:left;text-align:center;">
 <!--        <a href="/productManagement">商品管理</a>-->
     </div>
-
+    <div id="head6" style="background-color:#35cfcd;height:20px;width:150px;float:left;text-align:center;">
+            <a href="/productTypeManagement">商品类型管理</a>
+    </div>
     <div id="hname" style="background-color:#35c0cd;">
         <h1 style="margin-bottom:0;text-align:center;" >商品管理</h1>
     </div>
 
 
-    <div id="body1" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
+    <div id="body1" style="background-color:#BFC9CA;height:250px;width:300px;float:left;">
         <b>搜索</b>
         <form name="input" action="/productManagement" method="get">
             <p>id: <input type="text" name="productId"/></p>
+            <p>类型id: <input type="text" name="productTypeId"/></p>
             <p>商品名: <input type="text" name="productName"/></p>
             <p>标签: <input type="text" name="productTag"/></p>
             <p><input type="submit" value="搜索"/></p>
@@ -49,6 +52,10 @@
                 <tr>
                     <td>商品id：</td>
                     <td><input type="text" th:field="*{productId}" /></td>
+                </tr>
+                <tr>
+                    <td>类型id：</td>
+                    <td><input type="text" th:field="*{productTypeId}" /></td>
                 </tr>
                 <tr>
                     <td>商品名：</td>
@@ -99,6 +106,7 @@
         <table border="1">
             <tr>
                 <th>商品ID</th>
+                <th>类型ID</th>
                 <th>商品名</th>
                 <th>是否上线</th>
                 <th>单价</th>
@@ -109,6 +117,7 @@
             </tr>
             <tr th:each="Product : ${list}">
                 <td th:text="${Product.getProductId()}">1</td>
+                <td th:text="${Product.getProductTypeId()}">1</td>
                 <td th:text="${Product.getProductName()}">1</td>
                 <td th:text="${Product.isProductOnsale()}">1</td>
                 <td th:text="${Product.getProductPrice()}">1</td>

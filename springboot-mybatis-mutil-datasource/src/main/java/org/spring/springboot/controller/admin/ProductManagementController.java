@@ -23,11 +23,11 @@ public class ProductManagementController {
     private ProductDao productDao;
 
     @GetMapping("/productManagement")
-    public String listAllProductInMarket(Long productId, String productName, String productTag, Model model) {
+    public String listAllProductInMarket(Long productId, String productName, String productTag, Long productTypeId, Model model) {
         model.addAttribute("Product", new Product());
         List<Product> list;
         model.addAttribute("host", "搜索结果");
-        list = productManagementService.searchProduct(productId, productName, productTag);
+        list = productManagementService.searchProduct(productId, productName, productTag, productTypeId);
         model.addAttribute("list", list);
         return "admin/productManagement";
     }

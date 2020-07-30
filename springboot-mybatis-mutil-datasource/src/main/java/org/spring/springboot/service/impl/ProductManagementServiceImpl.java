@@ -25,11 +25,12 @@ public class ProductManagementServiceImpl implements ProductManagementService {
     }
 
     @Override
-    public List<Product> searchProduct(Long productId, String productName, String productTag) {
+    public List<Product> searchProduct(Long productId, String productName, String productTag, Long productTypeId) {
         Product product = new Product();
         product.setProductId(productId);
         product.setProductName(productName);
         product.setProductTag(productTag);
+        product.setProductTypeId(productTypeId);
         return productDao.searchProduct(product);
     }
 

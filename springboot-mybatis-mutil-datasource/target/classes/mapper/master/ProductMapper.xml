@@ -40,6 +40,9 @@
 		<if test="productTag!=null and productTag!=''">
 			AND product_tag LIKE CONCAT('%',#{productTag},'%')
 		</if>
+		<if test="productTypeId!=null and productTypeId!=''">
+			AND product_type_id = #{productTypeId}
+		</if>
 	</select>
 
 	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">
