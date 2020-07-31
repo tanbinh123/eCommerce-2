@@ -1,6 +1,8 @@
 package org.spring.springboot.service.impl;
 
+import org.spring.springboot.dao.master.ProductDao;
 import org.spring.springboot.dao.master.ProductTypeDao;
+import org.spring.springboot.domain.Product;
 import org.spring.springboot.domain.ProductType;
 import org.spring.springboot.service.ProductTypeManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
     @Autowired
     private ProductTypeDao productTypeDao;
 
+    @Autowired
+    private ProductDao productDao;
+
     @Override
     public List<ProductType> findById(Long productTypeId) {
         return productTypeDao.findById(productTypeId);
@@ -29,7 +34,7 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
         ProductType productType = new ProductType();
         productType.setProductTypeId(productTypeId);
         productType.setProductTypeName(productTypeName);
-        return productTypeDao.searchById(productType);
+        return productTypeDao.search(productType);
     }
 
     @Transactional
@@ -67,8 +72,13 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
 
     @Override
     public Long deleteById(Long productTypeId) {
-        return productTypeDao.deleteById(productTypeId);
+        Product product = new Product();
+        product.setProductTypeId(productTypeId);
+        if (productDao.searchProduct(product).isEmpty()) {
+            return productTypeDao.deleteById(productTypeId);
+        }else{
+            return (long)-1;
+        }
     }
-
 
 }

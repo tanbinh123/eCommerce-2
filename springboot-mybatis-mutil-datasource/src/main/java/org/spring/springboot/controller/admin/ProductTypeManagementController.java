@@ -54,7 +54,7 @@ public class ProductTypeManagementController {
             return "admin/inputWarning";
         }
         if(productTypeManagementService.deleteById(productType.getProductTypeId()) == -1){
-            model.addAttribute("host", "失败");
+            model.addAttribute("host", "失败，该类型下仍然存在商品");
             return "admin/inputWarning";
         }else{
             return "redirect:/productTypeManagement";

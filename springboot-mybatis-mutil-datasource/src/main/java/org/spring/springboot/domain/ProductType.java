@@ -10,7 +10,7 @@ public class ProductType {
 
     private String productTypeName = "-1";
 
-    private String productTypeState = "-1";
+    private String productTypeState = "正常";
 
     public Long getProductTypeId() {
         return productTypeId;

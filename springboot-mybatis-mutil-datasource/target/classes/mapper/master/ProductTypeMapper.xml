@@ -20,7 +20,7 @@
 	</select>
 
 
-	<select id="searchById" resultMap="BaseResultMap" parameterMap="ProductType">
+	<select id="search" resultMap="BaseResultMap" parameterMap="ProductType">
 		select
 		<include refid="Base_Column_List" />
 		from product_type
@@ -32,6 +32,7 @@
 		<if test="productTypeName!=null and productTypeName!=''">
 			AND product_type_name LIKE CONCAT('%',#{productTypeName},'%')
 		</if>
+
 	</select>
 
 	<select id="listAll" resultMap="BaseResultMap" parameterType="java.lang.String">

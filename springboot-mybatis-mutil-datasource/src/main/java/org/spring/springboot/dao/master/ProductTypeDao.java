@@ -19,7 +19,7 @@ public interface ProductTypeDao {
 
     List<ProductType> findById(@Param("productTypeId") Long productTypeId);
 
-    List<ProductType> searchById(ProductType productType);
+    List<ProductType> search(ProductType productType);
 
     Long saveById(ProductType productType);
 
