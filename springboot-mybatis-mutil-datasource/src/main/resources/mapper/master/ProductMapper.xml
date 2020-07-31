@@ -3,6 +3,7 @@
 <mapper namespace="org.spring.springboot.dao.master.ProductDao">
 	<resultMap id="BaseResultMap" type="org.spring.springboot.domain.Product">
 		<result column="product_id" property="productId" />
+		<result column="product_type_id" property="productTypeId" />
 		<result column="product_name" property="productName" />
 		<result column="product_onsale" property="productOnsale" />
 		<result column="product_price" property="productPrice" />
@@ -14,7 +15,7 @@
 	<parameterMap id="Product" type="org.spring.springboot.domain.Product"/>
 
 	<sql id="Base_Column_List">
-		product_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag
+		product_id, product_type_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag
 	</sql>
 
 	<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Long">
@@ -53,9 +54,9 @@
 
 	<insert id="saveProductById" parameterMap="Product" useGeneratedKeys="true" >
 		insert into
-			product(product_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag)
+			product(product_id, product_type_id, product_name, product_onsale, product_price, product_description, product_quantity, product_tag)
 		values
-			(#{productId},#{productName},#{productOnsale},#{productPrice},#{productDescription},#{productQuantity},#{productTag})
+			(#{productId},#{productTypeId},#{productName},#{productOnsale},#{productPrice},#{productDescription},#{productQuantity},#{productTag})
 	</insert>
 
 	<delete id="deleteProduct" parameterType="java.lang.Long">

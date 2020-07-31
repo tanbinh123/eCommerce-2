@@ -50,19 +50,19 @@ public class ProductManagementServiceImpl implements ProductManagementService {
             //x-lock
             productDao.xlockById(product.getProductId());
             //check if not null then update
-            long productId = product.getProductId();
-
+            long myProductId = product.getProductId();
+            productDao.updateProductTypeId(product.getProductTypeId(),myProductId);
             if (product.getProductName() != null && (! product.getProductName().equals(""))){
-                productDao.updateProductName(product.getProductName(),productId);
+                productDao.updateProductName(product.getProductName(),myProductId);
             }
-            productDao.updateOnsale(product.isProductOnsale(),productId);
-            productDao.updateProductPrice(product.getProductPrice(),productId);
+            productDao.updateOnsale(product.isProductOnsale(),myProductId);
+            productDao.updateProductPrice(product.getProductPrice(),myProductId);
             if (product.getProductDescription() != null && (! product.getProductDescription().equals(""))){
-                productDao.updateDescription(product.getProductDescription(),productId);
+                productDao.updateDescription(product.getProductDescription(),myProductId);
             }
-            productDao.updateQuantity(product.getProductQuantity(),productId);
+            productDao.updateQuantity(product.getProductQuantity(),myProductId);
             if (product.getProductTag() != null && (! product.getProductTag().equals(""))){
-                productDao.updateTag(product.getProductTag(),productId);
+                productDao.updateTag(product.getProductTag(),myProductId);
             }
             return (long)0;
         }
