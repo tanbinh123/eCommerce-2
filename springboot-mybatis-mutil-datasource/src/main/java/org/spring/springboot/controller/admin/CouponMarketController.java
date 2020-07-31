@@ -44,34 +44,14 @@ public class CouponMarketController {
         if((couponMarket.getCouponId() == null)||couponMarket.getCouponQuantity() == null ){
             return "admin/inputWarning";
         }
+        //test if update or insert
         if(couponMarketService.findCouponMarketById(couponMarket.getCouponId()).isEmpty()){
+            //insert
             couponMarketService.saveCouponMarketId(couponMarket);
         }else{
-
-            //test if posted in couponMarket's params are not null
-
-            if(couponMarket.getCouponName() != null && couponMarket.getCouponName() != "" ) {
-                couponMarketDao.updateCouponName(couponMarket.getCouponName(), couponMarket.getCouponId());
-            }
-
-            if(couponMarket.getCouponQuantity() != null) {
-                couponMarketDao.updateQuantity(couponMarket.getCouponQuantity(), couponMarket.getCouponId());
-            }
-
-            if(couponMarket.getExpireDate() != null){
-                //TODO
-            }
-
-            if(couponMarket.getCouponDescription() != null && couponMarket.getCouponDescription() != ""){
-                couponMarketDao.updateDescription(couponMarket.getCouponDescription(), couponMarket.getCouponId());
-            }
-
-            couponMarketDao.updateOnsale(couponMarket.isCouponOnsale(), couponMarket.getCouponId());
-            couponMarketDao.updateThresholdPrice(couponMarket.getEquivalentPrice(), couponMarket.getCouponId());
-            couponMarketDao.updateEquivalentPrice(couponMarket.getEquivalentPrice(), couponMarket.getCouponId());
-
+            //update
+            couponMarketService.updateCouponMarketById(couponMarket);
         }
-
         return "redirect:/couponMarket";
     }
 

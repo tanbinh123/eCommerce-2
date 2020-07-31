@@ -8,7 +8,9 @@ public class ProductType {
 
     private Long productTypeId;
 
-    private String productTypeName = null;
+    private String productTypeName = "-1";
+
+    private String productTypeState = "-1";
 
     public Long getProductTypeId() {
         return productTypeId;
@@ -24,5 +26,13 @@ public class ProductType {
 
     public void setProductTypeName(String productName) {
         this.productTypeName = productName;
+    }
+
+    public String getProductTypeState() {
+        return productTypeState;
+    }
+
+    public void setProductTypeState(String productTypeState) {
+        this.productTypeState = productTypeState;
     }
 }

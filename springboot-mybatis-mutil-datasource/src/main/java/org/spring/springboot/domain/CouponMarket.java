@@ -10,17 +10,17 @@ public class CouponMarket {
 
     private Long couponId;
 
-    private String couponName;
+    private String couponName = "-1";
 
-    private String couponDescription;
+    private String couponDescription = "-1";
 
-    private boolean couponOnsale;
+    private boolean couponOnsale = false;
 
-    private double thresholdPrice;
+    private double thresholdPrice = -1;
 
-    private double equivalentPrice;
+    private double equivalentPrice = -1;
 
-    private Long couponQuantity;
+    private Long couponQuantity = (long)-1;
 
     private Date expireDate;
 

@@ -22,6 +22,8 @@ public interface CouponMarketService {
 
     Long saveCouponMarketId(CouponMarket couponMarket);
 
+    Long updateCouponMarketById(CouponMarket couponMarket);
+
     List<CouponMarket> listAll();
 
     Long deleteCouponMarket(Long couponId);

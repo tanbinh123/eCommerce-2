@@ -51,17 +51,24 @@ public class ProductManagementServiceImpl implements ProductManagementService {
             productDao.xlockById(product.getProductId());
             //check if not null then update
             long myProductId = product.getProductId();
-            productDao.updateProductTypeId(product.getProductTypeId(),myProductId);
-            if (product.getProductName() != null && (! product.getProductName().equals(""))){
+
+            if (product.getProductTypeId() != -1){
+                productDao.updateProductTypeId(product.getProductTypeId(),myProductId);
+            }
+            if (!product.getProductName().equals("-1")){
                 productDao.updateProductName(product.getProductName(),myProductId);
             }
             productDao.updateOnsale(product.isProductOnsale(),myProductId);
-            productDao.updateProductPrice(product.getProductPrice(),myProductId);
-            if (product.getProductDescription() != null && (! product.getProductDescription().equals(""))){
+            if(product.getProductPrice() != -1){
+                productDao.updateProductPrice(product.getProductPrice(),myProductId);
+            }
+            if (! product.getProductDescription().equals("-1")){
                 productDao.updateDescription(product.getProductDescription(),myProductId);
             }
-            productDao.updateQuantity(product.getProductQuantity(),myProductId);
-            if (product.getProductTag() != null && (! product.getProductTag().equals(""))){
+            if(product.getProductQuantity() != -1) {
+                productDao.updateQuantity(product.getProductQuantity(), myProductId);
+            }
+            if (! product.getProductTag().equals("-1")){
                 productDao.updateTag(product.getProductTag(),myProductId);
             }
             return (long)0;

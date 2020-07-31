@@ -53,8 +53,12 @@ public class ProductTypeManagementController {
             model.addAttribute("host", "ID不能为空");
             return "admin/inputWarning";
         }
-        productTypeManagementService.deleteById(productType.getProductTypeId());
-        return "redirect:/productTypeManagement";
+        if(productTypeManagementService.deleteById(productType.getProductTypeId()) == -1){
+            model.addAttribute("host", "失败");
+            return "admin/inputWarning";
+        }else{
+            return "redirect:/productTypeManagement";
+        }
     }
 
 }

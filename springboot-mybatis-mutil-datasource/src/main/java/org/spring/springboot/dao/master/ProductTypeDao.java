@@ -31,6 +31,8 @@ public interface ProductTypeDao {
     @Update("UPDATE product SET product_type_name = #{productTypeName} WHERE product_type_id = #{productTypeId}")
     int updateProducrtTypeNameById(@Param("productTypeName") String productTypeName, @Param("productTypeId") long productTypeId);
 
+    @Update("UPDATE product SET product_type_state = #{productTypeName} WHERE product_type_id = #{productTypeId}")
+    int updateProducrtTypeStateById(@Param("productTypeName") String productTypeName, @Param("productTypeId") long productTypeId);
 
 
 }

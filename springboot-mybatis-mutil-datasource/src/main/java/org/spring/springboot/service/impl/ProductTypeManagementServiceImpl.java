@@ -47,7 +47,7 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
             //check if not null then update
             long productTypeId = productType.getProductTypeId();
 
-            if (productType.getProductTypeName() != null && (! productType.getProductTypeName().equals(""))){
+            if (! productType.getProductTypeName().equals("-1")){
                 productTypeDao.updateProducrtTypeNameById(productType.getProductTypeName(),productTypeId);
             }
 

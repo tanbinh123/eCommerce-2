@@ -43,7 +43,7 @@
     </div>
     <div id="body2" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
 
-        <b>新建 / 更新</b>
+        <b>新建 / 更新 ('-1'为不更改)</b>
         <br/>
         <br/>
         <form action="#" th:action="@{/productManagement}" th:object="${Product}" method="post">
@@ -102,7 +102,7 @@
     </div>
 
     <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
-        <b th:text="${host}" >券列表</b>
+        <b th:text="${host}" >列表</b>
         <table border="1">
             <tr>
                 <th>商品ID</th>

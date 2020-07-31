@@ -10,19 +10,19 @@ public class Product {
 
     private Long productId;
 
-    private Long productTypeId;
+    private Long productTypeId = (long)-1;
 
-    private String productName = null;
+    private String productName = "-1";
 
-    private String productTag = null;
+    private String productTag = "-1";
 
-    private String productDescription = null;
+    private String productDescription = "-1";
 
-    private boolean productOnsale;
+    private boolean productOnsale = false;
 
-    private double productPrice;
+    private double productPrice = -1;
 
-    private Long productQuantity;
+    private Long productQuantity = (long)-1;
 
     public Long getProductId() {
         return productId;

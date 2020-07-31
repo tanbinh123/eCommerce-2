@@ -84,10 +84,13 @@
             <tr>
                 <th>商品类型ID</th>
                 <th>商品类型名</th>
+                <th>商品类型状态</th>
             </tr>
             <tr th:each="ProductType : ${list}">
                 <td th:text="${ProductType.getProductTypeId()}">1</td>
                 <td th:text="${ProductType.getProductTypeName()}">1</td>
+                <td th:text="${ProductType.getProductTypeState()}">1</td>
+
 
             </tr>
         </table>
