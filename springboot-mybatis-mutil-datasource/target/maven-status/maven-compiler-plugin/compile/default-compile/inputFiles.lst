@@ -1,6 +1,7 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/ProductDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/ProductTypeManagementService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/config/ds/MasterDataSourceConfig.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UIUserController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/Transaction.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/ProductManagementService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/WalletService.java
@@ -22,6 +23,9 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/City.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/ProductTypeDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/ProductType.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UICouponMarketController.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UIProductManagementController.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UINavigatorController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/cluster/WalletDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/domain/User.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/impl/TransactionServiceImpl.java
@@ -30,6 +34,7 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/cluster/CityDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/IndexController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/config/ds/ClusterDataSourceConfig.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UITransactionController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/CouponMarketDao.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/UserService.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/dao/master/UserDao.java
@@ -38,4 +43,6 @@
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/ProductTypeManagementController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/admin/NavigatorController.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UIProductTypeManagementController.java
+/Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/controller/userInterface/UIIndexController.java
 /Users/brandonwong/Git/springboot-sd-project/springboot-mybatis-mutil-datasource/src/main/java/org/spring/springboot/service/TransactionService.java
