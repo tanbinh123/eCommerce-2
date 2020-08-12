@@ -32,7 +32,7 @@
 
     <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
         <b>搜索</b>
-        <form name="input" action="/user" method="get">
+        <form name="input" action="/admin/user" method="get">
             <p>id: <input type="text" name="id"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
@@ -53,7 +53,7 @@
     <div id="body2.1" style="background-color:#D7DBDD;height:200px;width:250px;float:left;">
         <b>更新(留空则不更改)</b>
 
-        <form action="#" th:action="@{/user}" th:object="${user}" method="post">
+        <form action="#" th:action="@{/admin/user}" th:object="${user}" method="post">
             <p>
                 <br/>
                 <input type="text" th:field="*{id}" /><br/>
@@ -71,7 +71,7 @@
 
     <div id="body4" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
         <b>删除</b>
-        <form action="#" th:action="@{/userDelete}" th:object="${user}" method="post">
+        <form action="#" th:action="@{/admin/userDelete}" th:object="${user}" method="post">
             <p>id: <input type="text" th:field="*{id}" /></p>
             <p><input type="submit" value="删除" /></p>
         </form>

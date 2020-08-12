@@ -31,7 +31,7 @@
 
     <div id="body1" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>搜索</b>
-        <form name="input" action="/couponMarket" method="get">
+        <form name="input" action="/admin/couponMarket" method="get">
             <p>id: <input type="text" name="couponId"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
@@ -42,7 +42,7 @@
         <b>新建 / 更新（'-1'为不更改）</b>
         <br/>
         <br/>
-        <form action="#" th:action="@{/couponMarket}" th:object="${couponMarket}" method="post">
+        <form action="#" th:action="@{/admin/couponMarket}" th:object="${couponMarket}" method="post">
 
             <table>
                 <tr>
@@ -87,7 +87,7 @@
 
     <div id="body3" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>删除</b>
-        <form action="#" th:action="@{/couponMarketDelete}" th:object="${couponMarket}" method="post">
+        <form action="#" th:action="@{/admin/couponMarketDelete}" th:object="${couponMarket}" method="post">
             <p>id: <input type="text" th:field="*{couponId}" /></p>
             <p><input type="submit" value="删除" /></p>
         </form>

@@ -45,7 +45,7 @@ public class ProductTypeManagementController {
             return "admin/inputWarning";
         }
         productTypeManagementService.insertOrUpdateById(productType);
-        return "redirect:/productTypeManagement";
+        return "redirect:/admin/productTypeManagement";
     }
 
     @PostMapping("/productTypeManagementDelete")
@@ -58,7 +58,7 @@ public class ProductTypeManagementController {
             model.addAttribute("host", "失败，该类型下仍然存在商品");
             return "admin/inputWarning";
         }
-        return "redirect:/productTypeManagement";
+        return "redirect:/admin/productTypeManagement";
     }
 
 }

@@ -109,7 +109,7 @@ public class UserController {
 
         }
 
-        return "redirect:/user";
+        return "redirect:/admin/user";
     }
 
     @PostMapping("/userDelete")
@@ -120,7 +120,7 @@ public class UserController {
         userService.deleteUser(user.getId());
         cityService.deleteCity(user.getId());
         walletService.deleteWallet(user.getId());
-        return "redirect:/user";
+        return "redirect:/admin/user";
     }
 
 }

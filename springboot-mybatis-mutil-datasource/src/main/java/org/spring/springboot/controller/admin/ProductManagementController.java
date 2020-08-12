@@ -46,7 +46,7 @@ public class ProductManagementController {
         }
 
         productManagementService.insertOrUpdateProduct(product);
-        return "redirect:/productManagement";
+        return "redirect:/admin/productManagement";
     }
 
     @PostMapping("/productDelete")
@@ -56,7 +56,7 @@ public class ProductManagementController {
             return "admin/inputWarning";
         }
         productManagementService.deleteProduct(product.getProductId());
-        return "redirect:/productManagement";
+        return "redirect:/admin/productManagement";
     }
 
 }

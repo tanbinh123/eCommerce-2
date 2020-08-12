@@ -33,7 +33,7 @@
 
     <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
         <b>交易搜索</b>
-        <form name="input" action="/transaction" method="get">
+        <form name="input" action="/admin/transaction" method="get">
             <p>transaction_id: <input type="text" name="id"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
@@ -41,7 +41,7 @@
     </div>
     <div id="body2" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
         <b>付款人搜索</b>
-        <form name="input" action="/transaction/payer_id" method="get">
+        <form name="input" action="/admin/transaction/payer_id" method="get">
             <p>payer_id: <input type="text" name="payer_id"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>
@@ -49,7 +49,7 @@
     </div>
     <div id="body3" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
         <b>收款人搜索</b>
-        <form name="input" action="/transaction/receiver_id" method="get">
+        <form name="input" action="/admin/transaction/receiver_id" method="get">
             <p>receiver_id: <input type="text" name="receiver_id"/></p>
             <p><input type="submit" value="搜索"/></p>
         </form>

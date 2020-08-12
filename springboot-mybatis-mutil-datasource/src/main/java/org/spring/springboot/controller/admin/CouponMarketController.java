@@ -53,7 +53,7 @@ public class CouponMarketController {
             //update
             couponMarketService.updateCouponMarketById(couponMarket);
         }
-        return "redirect:/couponMarket";
+        return "redirect:/admin/couponMarket";
     }
 
     @PostMapping("/couponMarketDelete")
@@ -62,7 +62,7 @@ public class CouponMarketController {
             return "admin/inputWarning";
         }
         couponMarketService.deleteCouponMarket(couponMarket.getCouponId());
-        return "redirect:/couponMarket";
+        return "redirect:/admin/couponMarket";
     }
 
 }

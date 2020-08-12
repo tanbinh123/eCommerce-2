@@ -35,7 +35,7 @@
 
     <div id="body1" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>搜索</b>
-        <form name="input" action="/productTypeManagement" method="get">
+        <form name="input" action="/admin/productTypeManagement" method="get">
             <p>类型id: <input type="text" name="productTypeId"/></p>
             <p>类型名: <input type="text" name="productTypeName"/></p>
             <p><input type="submit" value="搜索"/></p>
@@ -46,7 +46,7 @@
         <b>新建 / 更新 ('-1'为不更改)</b>
         <br/>
         <br/>
-        <form action="#" th:action="@{/productTypeManagement}" th:object="${ProductType}" method="post">
+        <form action="#" th:action="@{/admin/productTypeManagement}" th:object="${ProductType}" method="post">
 
             <table>
                 <tr>
@@ -66,7 +66,7 @@
 
     <div id="body3" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
         <b>删除</b>
-        <form action="#" th:action="@{/productTypeManagementDelete}" th:object="${ProductType}" method="post">
+        <form action="#" th:action="@{/admin/productTypeManagementDelete}" th:object="${ProductType}" method="post">
             <p>id: <input type="text" th:field="*{productTypeId}" /></p>
             <p><input type="submit" value="删除" /></p>
         </form>
