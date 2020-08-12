@@ -38,7 +38,7 @@
 		from coupon_market
 	</select>
 
-	<insert id="saveCouponMarketId" parameterMap="CouponMarket" useGeneratedKeys="true" keyProperty="id">
+	<insert id="saveCouponMarketId" parameterMap="CouponMarket" useGeneratedKeys="true" keyProperty="couponId">
 		insert into
 			coupon_market(coupon_id, coupon_onsale, threshold_price, equivalent_price, coupon_quantity)
 		values
