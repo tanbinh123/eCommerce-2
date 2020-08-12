@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/")
+//@RequestMapping("/admin")
 public class NavigatorController {
 
-    @GetMapping("/")
+    @GetMapping("/admin")
     public String navigator(Model model) {
         return "admin/navigator";
     }

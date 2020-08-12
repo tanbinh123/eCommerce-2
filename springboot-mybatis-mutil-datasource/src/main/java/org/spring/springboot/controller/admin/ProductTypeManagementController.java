@@ -17,7 +17,7 @@ import java.util.List;
 
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/admin")
 public class ProductTypeManagementController {
 
     @Autowired
