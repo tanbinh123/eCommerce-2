@@ -11,13 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class HomepageController {
-
+public class IndexController {
 
     @GetMapping("/")
-    public String findById(Long id, Model model) {
+    public String homepage(Model model) {
 
-        return "admin/homepage";
+        return "admin/index";
 
     }
 
