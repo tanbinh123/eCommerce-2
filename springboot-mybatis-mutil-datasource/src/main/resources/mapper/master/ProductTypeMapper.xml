@@ -4,12 +4,13 @@
 	<resultMap id="BaseResultMap" type="org.spring.springboot.domain.ProductType">
 		<result column="product_type_id" property="productTypeId" />
 		<result column="product_type_name" property="productTypeName" />
+		<result column="product_type_state" property="productTypeState" />
 	</resultMap>
 
 	<parameterMap id="ProductType" type="org.spring.springboot.domain.ProductType"/>
 
 	<sql id="Base_Column_List">
-		product_type_id, product_type_name
+		product_type_id, product_type_name, product_type_state
 	</sql>
 
 	<select id="findById" resultMap="BaseResultMap" parameterType="java.lang.Long">
@@ -43,16 +44,11 @@
 
 	<insert id="saveById" parameterMap="ProductType" useGeneratedKeys="true" >
 		insert into
-			product_type(product_type_id, product_type_name)
+			product_type(product_type_id, product_type_name, product_type_state)
 		values
-			(#{productTypeId},#{productTypeName})
+			(#{productTypeId},#{productTypeName},#{productTypeState})
 	</insert>
 
-	<delete id="deleteById" parameterType="java.lang.Long">
-		delete from
-			product_type
-		where
-			product_type_id = #{productTypeId}
-	</delete>
+
 
 </mapper>

@@ -43,7 +43,7 @@
     </div>
     <div id="body2" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
 
-        <b>新建 / 更新</b>
+        <b>新建 / 更新 ('-1'为不更改)</b>
         <br/>
         <br/>
         <form action="#" th:action="@{/productTypeManagement}" th:object="${ProductType}" method="post">
@@ -90,8 +90,6 @@
                 <td th:text="${ProductType.getProductTypeId()}">1</td>
                 <td th:text="${ProductType.getProductTypeName()}">1</td>
                 <td th:text="${ProductType.getProductTypeState()}">1</td>
-
-
             </tr>
         </table>
     </div>

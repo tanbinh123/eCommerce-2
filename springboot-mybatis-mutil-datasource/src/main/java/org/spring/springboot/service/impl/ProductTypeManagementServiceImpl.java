@@ -2,7 +2,6 @@ package org.spring.springboot.service.impl;
 
 import org.spring.springboot.dao.master.ProductDao;
 import org.spring.springboot.dao.master.ProductTypeDao;
-import org.spring.springboot.domain.Product;
 import org.spring.springboot.domain.ProductType;
 import org.spring.springboot.service.ProductTypeManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,9 +52,8 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
             long productTypeId = productType.getProductTypeId();
 
             if (! productType.getProductTypeName().equals("-1")){
-                productTypeDao.updateProducrtTypeNameById(productType.getProductTypeName(),productTypeId);
+                productTypeDao.updateProductTypeNameById(productType.getProductTypeName(),productTypeId);
             }
-
             return (long)0;
         }
     }
@@ -70,15 +68,15 @@ public class ProductTypeManagementServiceImpl implements ProductTypeManagementSe
         return productTypeDao.listAll();
     }
 
+    @Transactional
     @Override
-    public Long deleteById(Long productTypeId) {
-        Product product = new Product();
-        product.setProductTypeId(productTypeId);
-        if (productDao.searchProduct(product).isEmpty()) {
-            return productTypeDao.deleteById(productTypeId);
-        }else{
+    public Long offLoad(Long productTypeId) {
+        productTypeDao.xlockById(productTypeId);
+        if (!productDao.findByProductTypeId(productTypeId).isEmpty()) {
             return (long)-1;
         }
+        productTypeDao.updateProductTypeStateById("Deleted",productTypeId);
+        return (long)0;
     }
 
 }

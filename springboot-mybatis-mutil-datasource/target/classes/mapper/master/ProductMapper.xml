@@ -25,6 +25,12 @@
 		where product_id like #{productId}
 	</select>
 
+	<select id="findByProductTypeId" resultMap="BaseResultMap" parameterType="java.lang.Long">
+		select
+		<include refid="Base_Column_List" />
+		from product
+		where product_type_id like #{productTypeId}
+	</select>
 
 	<select id="searchProduct" resultMap="BaseResultMap" parameterMap="Product">
 		select

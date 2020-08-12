@@ -1,3 +1,4 @@
+//商品类型管理
 package org.spring.springboot.controller.admin;
 
 
@@ -53,12 +54,11 @@ public class ProductTypeManagementController {
             model.addAttribute("host", "ID不能为空");
             return "admin/inputWarning";
         }
-        if(productTypeManagementService.deleteById(productType.getProductTypeId()) == -1){
+        if(productTypeManagementService.offLoad(productType.getProductTypeId()) == -1){
             model.addAttribute("host", "失败，该类型下仍然存在商品");
             return "admin/inputWarning";
-        }else{
-            return "redirect:/productTypeManagement";
         }
+        return "redirect:/productTypeManagement";
     }
 
 }

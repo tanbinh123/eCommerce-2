@@ -23,16 +23,16 @@ public interface ProductTypeDao {
 
     Long saveById(ProductType productType);
 
-    Long deleteById(Long productTypeId);
+//    Long deleteById(Long productTypeId);
 
-    @Select("SELECT * FROM product WHERE product_type_id = #{productTypeId} FOR UPDATE")
-    int xlockById(@Param("productTypeId") long productTypeId);
+    @Select("SELECT * FROM product_type WHERE product_type_id = #{productTypeId} FOR UPDATE")
+    Long xlockById(@Param("productTypeId") long productTypeId);
 
-    @Update("UPDATE product SET product_type_name = #{productTypeName} WHERE product_type_id = #{productTypeId}")
-    int updateProducrtTypeNameById(@Param("productTypeName") String productTypeName, @Param("productTypeId") long productTypeId);
+    @Update("UPDATE product_type SET product_type_name = #{productTypeName} WHERE product_type_id = #{productTypeId}")
+    Long updateProductTypeNameById(@Param("productTypeName") String productTypeName, @Param("productTypeId") long productTypeId);
 
-    @Update("UPDATE product SET product_type_state = #{productTypeName} WHERE product_type_id = #{productTypeId}")
-    int updateProducrtTypeStateById(@Param("productTypeName") String productTypeName, @Param("productTypeId") long productTypeId);
+    @Update("UPDATE product_type SET product_type_state = #{productTypeState} WHERE product_type_id = #{productTypeId}")
+    Long updateProductTypeStateById(@Param("productTypeState") String productTypeState, @Param("productTypeId") long productTypeId);
 
 
 }

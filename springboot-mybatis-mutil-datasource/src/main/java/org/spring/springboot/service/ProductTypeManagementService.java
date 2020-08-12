@@ -27,7 +27,7 @@ public interface ProductTypeManagementService {
 
     List<ProductType> listAll();
 
-    Long deleteById(Long productTypeId);
+    Long offLoad(Long productTypeId);
 
 
 }
