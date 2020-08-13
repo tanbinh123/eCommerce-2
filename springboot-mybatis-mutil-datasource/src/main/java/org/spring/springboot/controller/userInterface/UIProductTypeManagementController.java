@@ -26,39 +26,39 @@ public class UIProductTypeManagementController {
     @Autowired
     private ProductTypeDao productTypeDao;
 
-    @GetMapping("/productTypeManagement")
-    public String listAllProductTypeInMarket(Long productTypeId, String productTypeName, Model model) {
-        model.addAttribute("ProductType", new ProductType());
-        List<ProductType> list;
-        model.addAttribute("host", "搜索结果");
-        list = productTypeManagementService.search(productTypeId, productTypeName);
-        model.addAttribute("list", list);
-        return "userInterface/productTypeManagement";
-    }
-
-
-
-    @PostMapping("/productTypeManagement")
-    public String productTypeInsertOrUpdate(Model model, @ModelAttribute ProductType productType) {
-        if((productType.getProductTypeId() == null)) {
-            model.addAttribute("host", "ID不能为空");
-            return "userInterface/inputWarning";
-        }
-        productTypeManagementService.insertOrUpdateById(productType);
-        return "redirect:/userInterface/productTypeManagement";
-    }
-
-    @PostMapping("/productTypeManagementDelete")
-    public String deleteUser(Model model, @ModelAttribute ProductType productType) {
-        if(productType.getProductTypeId() == null){
-            model.addAttribute("host", "ID不能为空");
-            return "userInterface/inputWarning";
-        }
-        if(productTypeManagementService.offLoad(productType.getProductTypeId()) == -1){
-            model.addAttribute("host", "失败，该类型下仍然存在商品");
-            return "userInterface/inputWarning";
-        }
-        return "redirect:/userInterface/productTypeManagement";
-    }
+//    @GetMapping("/productTypeManagement")
+//    public String listAllProductTypeInMarket(Long productTypeId, String productTypeName, Model model) {
+//        model.addAttribute("ProductType", new ProductType());
+//        List<ProductType> list;
+//        model.addAttribute("host", "搜索结果");
+//        list = productTypeManagementService.search(productTypeId, productTypeName);
+//        model.addAttribute("list", list);
+//        return "userInterface/productTypeManagement";
+//    }
+//
+//
+//
+//    @PostMapping("/productTypeManagement")
+//    public String productTypeInsertOrUpdate(Model model, @ModelAttribute ProductType productType) {
+//        if((productType.getProductTypeId() == null)) {
+//            model.addAttribute("host", "ID不能为空");
+//            return "userInterface/inputWarning";
+//        }
+//        productTypeManagementService.insertOrUpdateById(productType);
+//        return "redirect:/userInterface/productTypeManagement";
+//    }
+//
+//    @PostMapping("/productTypeManagementDelete")
+//    public String deleteUser(Model model, @ModelAttribute ProductType productType) {
+//        if(productType.getProductTypeId() == null){
+//            model.addAttribute("host", "ID不能为空");
+//            return "userInterface/inputWarning";
+//        }
+//        if(productTypeManagementService.offLoad(productType.getProductTypeId()) == -1){
+//            model.addAttribute("host", "失败，该类型下仍然存在商品");
+//            return "userInterface/inputWarning";
+//        }
+//        return "redirect:/userInterface/productTypeManagement";
+//    }
 
 }

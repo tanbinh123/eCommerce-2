@@ -15,7 +15,7 @@ public class ScheduledTasks {
     @Autowired
     private CouponMarketService couponMarketService;
 
-    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
 //    @Scheduled(fixedRate = 5000)
 //    public void reportCurrentTime() {
@@ -25,7 +25,7 @@ public class ScheduledTasks {
     @Scheduled(fixedRate = 900000)//900000 => per 15min
     //reference:https://www.jianshu.com/p/4d9c9b08111d
     public void checkCouponMarcketIsExpired(){
-        System.out.println(dateFormat.format(new Date()) + " Check if coupon in market is expired.");
+        System.out.println(dateFormat.format(new Date()) + "  Check if coupon in market is expired.");
         couponMarketService.checkCouponMarketIsExpired();
     }
 
