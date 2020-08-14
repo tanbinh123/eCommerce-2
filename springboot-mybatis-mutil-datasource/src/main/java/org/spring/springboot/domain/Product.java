@@ -18,9 +18,12 @@ public class Product {
 
     private String productDescription = "-1";
 
-    private boolean productOnsale = false;
+    private Integer productState = -1;
+    //-1 for initialized
+    //0 for on sale
+    //1 for not on sale
 
-    private double productPrice = -1;
+    private Double productPrice = -1.0;
 
     private Long productQuantity = (long)-1;
 
@@ -56,12 +59,12 @@ public class Product {
         this.productDescription = productDescription;
     }
 
-    public boolean isProductOnsale() {
-        return productOnsale;
+    public Integer getProductState() {
+        return productState;
     }
 
-    public void setProductOnsale(boolean productOnsale) {
-        this.productOnsale = productOnsale;
+    public void setProductState(Integer productState) {
+        this.productState = productState;
     }
 
     public double getProductPrice() {

@@ -25,12 +25,7 @@ public class ProductManagementServiceImpl implements ProductManagementService {
     }
 
     @Override
-    public List<Product> searchProduct(Long productId, String productName, String productTag, Long productTypeId) {
-        Product product = new Product();
-        product.setProductId(productId);
-        product.setProductName(productName);
-        product.setProductTag(productTag);
-        product.setProductTypeId(productTypeId);
+    public List<Product> searchProduct(Product product) {
         return productDao.searchProduct(product);
     }
 
@@ -58,7 +53,9 @@ public class ProductManagementServiceImpl implements ProductManagementService {
             if (!product.getProductName().equals("-1")){
                 productDao.updateProductName(product.getProductName(),myProductId);
             }
-            productDao.updateOnsale(product.isProductOnsale(),myProductId);
+            if (product.getProductState() != -1){
+                productDao.updateProductState(product.getProductState(),myProductId);
+            }
             if(product.getProductPrice() != -1){
                 productDao.updateProductPrice(product.getProductPrice(),myProductId);
             }

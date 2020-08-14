@@ -74,37 +74,37 @@ public class TransactionController {
         return "admin/transaction";
     }
 
-//    @GetMapping("/userInterface/{id}")
+//    @GetMapping("/customer/{id}")
 //    public String findUsers(Model model, @PathVariable("id") Long id) {
 //        model.addAttribute("host", "搜索结果");
-//        model.addAttribute("userInterface", new User());
+//        model.addAttribute("customer", new User());
 //        List<User> List;
 //        List = userService.findById(id);
 //        userService.setCity(List);
 //        model.addAttribute("List", List);
-//        return "admin/userInterface";
+//        return "admin/customer";
 //    }
 
-//    @PostMapping("/userInterface")
-//    public String userRegistration(Model model, @ModelAttribute User userInterface) {
-//        if(userInterface.getId() == null){
+//    @PostMapping("/customer")
+//    public String userRegistration(Model model, @ModelAttribute User customer) {
+//        if(customer.getId() == null){
 //            return "admin/inputWarning";
 //        }
-//        else if(!userService.findById(userInterface.getId()).isEmpty()){
+//        else if(!userService.findById(customer.getId()).isEmpty()){
 //            return "admin/inputWarning";
 //        }
 //
-//        userService.saveUser(userInterface);
+//        userService.saveUser(customer);
 //        //create city
 //        City city = new City();
-//        city.setId(userInterface.getId());
+//        city.setId(customer.getId());
 //        cityService.saveCity(city);
 //        //create wallet
 //        Wallet wallet = new Wallet();
-//        wallet.setId(userInterface.getId());
+//        wallet.setId(customer.getId());
 //        wallet.setAsset(0);
 //        walletService.saveWallet(wallet);
-//        return "redirect:/userInterface";
+//        return "redirect:/customer";
 //    }
 
 

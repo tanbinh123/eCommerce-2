@@ -52,15 +52,15 @@ public class UserController {
         return "admin/user";
     }
 
-//    @GetMapping("/userInterface/{id}")
+//    @GetMapping("/customer/{id}")
 //    public String findUsers(Model model, @PathVariable("id") Long id) {
 //        model.addAttribute("host", "搜索结果");
-//        model.addAttribute("userInterface", new User());
+//        model.addAttribute("customer", new User());
 //        List<User> List;
 //        List = userService.findById(id);
 //        userService.setCity(List);
 //        model.addAttribute("List", List);
-//        return "admin/userInterface";
+//        return "admin/customer";
 //    }
 
     @PostMapping("/user")
@@ -105,7 +105,7 @@ public class UserController {
             }
 
 //            //update city
-//            cityService.updateCity(userInterface.getCity());
+//            cityService.updateCity(customer.getCity());
 
         }
 

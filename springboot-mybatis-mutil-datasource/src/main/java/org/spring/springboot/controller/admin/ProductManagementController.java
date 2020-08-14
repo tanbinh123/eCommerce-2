@@ -28,7 +28,13 @@ public class ProductManagementController {
         model.addAttribute("Product", new Product());
         List<Product> list;
         model.addAttribute("host", "搜索结果");
-        list = productManagementService.searchProduct(productId, productName, productTag, productTypeId);
+        Product myProduct = new Product();
+        myProduct.setProductId(productId);
+        myProduct.setProductName(productName);
+        myProduct.setProductTag(productTag);
+        myProduct.setProductTypeId(productTypeId);
+        myProduct.setProductState(null);
+        list = productManagementService.searchProduct(myProduct);
         model.addAttribute("list", list);
         return "admin/productManagement";
     }

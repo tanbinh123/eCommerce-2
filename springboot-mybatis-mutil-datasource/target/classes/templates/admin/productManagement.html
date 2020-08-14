@@ -11,7 +11,7 @@
 <!--        <a href="/">主页</a>-->
 <!--    </div>-->
 <!--    <div id="head2" style="background-color:#73C6B6;height:20px;width:150px;float:left;text-align:center;">-->
-<!--        <a href="/userInterface">用户管理</a>-->
+<!--        <a href="/customer">用户管理</a>-->
 <!--    </div>-->
 <!--    <div id="head3" style="background-color:#76D7C4;height:20px;width:150px;float:left;text-align:center;">-->
 <!--        <a href="/transaction">交易记录</a>-->
@@ -63,7 +63,7 @@
                 </tr>
                 <tr>
                     <td>是否上线：</td>
-                    <td><input type="text" th:field="*{productOnsale}" /></td>
+                    <td><input type="text" th:field="*{productState}" /></td>
                 </tr>
                 <tr>
                     <td>价格：</td>
@@ -119,7 +119,7 @@
                 <td th:text="${Product.getProductId()}">1</td>
                 <td th:text="${Product.getProductTypeId()}">1</td>
                 <td th:text="${Product.getProductName()}">1</td>
-                <td th:text="${Product.isProductOnsale()}">1</td>
+                <td th:text="${Product.getProductState()}">1</td>
                 <td th:text="${Product.getProductPrice()}">1</td>
                 <td th:text="${Product.getProductQuantity()}">1</td>
                 <td th:text="${Product.getProductTag()}">1</td>
