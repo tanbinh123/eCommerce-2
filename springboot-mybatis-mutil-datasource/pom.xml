@@ -41,6 +41,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!--热部署配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <scope>true</scope>
+        </dependency>
+
         <!-- Spring Boot Mybatis 依赖 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -92,6 +100,15 @@
                 <configuration>
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!--热部署配置-->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--fork:如果没有该项配置,整个devtools不会起作用-->
+                    <fork>true</fork>
                 </configuration>
             </plugin>
         </plugins>

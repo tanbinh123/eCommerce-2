@@ -5,67 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58fb2f86-6a93-4a71-bb2a-4318b605fb27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/springboot-sd-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/springboot-sd-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UICouponMarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmCouponMarketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UIIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmIndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UINavigatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmNavigatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UIProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmProductManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UIProductTypeManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmProductTypeManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UITransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmTransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/userInterface/UIUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/ProductManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/ProductManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/ProductManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/ProductManagementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/master/ProductMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/couponMarket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/couponMarket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/inputWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/inputWarning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/productManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/productManagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/productTypeManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/productTypeManagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/transaction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/couponMarket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/couponMarket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/inputWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/inputWarning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/navigator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/productManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/productManagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/transaction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userInterface/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/ProductManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UICouponMarketController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UIIndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UINavigatorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UIProductManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UIProductTypeManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UITransactionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/userInterface/UIUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/ProductManagementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/ProductManagementServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis-mutil-datasource.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis-mutil-datasource.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/couponMarket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/couponMarket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/couponMarket.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/couponMarket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/inputWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/inputWarning.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/productManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/productManagement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/navigator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/productTypeManagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/productTypeManagement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/transaction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userInterface/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/couponMarket.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer/couponMarket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/inputWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer/inputWarning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/navigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer/navigator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot-mybatis-mutil-datasource-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.spring.springboot.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.spring.springboot.ApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.spring.springboot.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.spring.springboot.ApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,11 +73,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/userInterface" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -223,13 +193,12 @@
       <workItem from="1595502093386" duration="117000" />
       <workItem from="1595504767584" duration="5334000" />
       <workItem from="1595510617067" duration="12225000" />
-      <workItem from="1597329713061" duration="567000" />
-      <workItem from="1597330421379" duration="4196000" />
+      <workItem from="1597329713061" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="341" y="128" key="#Inspections" timestamp="1595512267643">
@@ -254,14 +223,14 @@
     </state>
     <state x="20" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1594291576414" />
     <state x="60" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/41.23.1399.877@41.23.1399.877" timestamp="1595260113213" />
-    <state x="623" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1597387043581">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state x="624" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1596182954966">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594972995558" />
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594891781015" />
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1594913132855" />
     <state x="598" y="174" key="#com.intellij.ide.util.MemberChooser/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594897980280" />
-    <state x="623" y="174" key="#com.intellij.ide.util.MemberChooser/43.23.1397.877@43.23.1397.877" timestamp="1597387043581" />
+    <state x="623" y="174" key="#com.intellij.ide.util.MemberChooser/43.23.1397.877@43.23.1397.877" timestamp="1595498588372" />
     <state x="624" y="174" key="#com.intellij.ide.util.MemberChooser/44.23.1396.877@44.23.1396.877" timestamp="1596182954966" />
     <state x="469" y="351" width="504" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594536244544">
       <screen x="0" y="23" width="1440" height="877" />
@@ -271,8 +240,8 @@
       <screen x="43" y="23" width="1397" height="877" />
     </state>
     <state x="368" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/43.23.1397.877@43.23.1397.877" timestamp="1595512484656" />
-    <state width="362" height="756" key="GridCell.Tab.0.bottom" timestamp="1597387932050">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="208" height="756" key="GridCell.Tab.0.bottom" timestamp="1597591043158">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655529" />
     <state width="1398" height="272" key="GridCell.Tab.0.bottom/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482104" />
@@ -280,10 +249,10 @@
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935753" />
     <state width="1355" height="240" key="GridCell.Tab.0.bottom/40.23.1400.877@40.23.1400.877" timestamp="1595483259452" />
     <state width="1355" height="240" key="GridCell.Tab.0.bottom/41.23.1399.877@41.23.1399.877" timestamp="1595260691727" />
-    <state width="362" height="756" key="GridCell.Tab.0.bottom/43.23.1397.877@43.23.1397.877" timestamp="1597387932050" />
-    <state width="848" height="756" key="GridCell.Tab.0.bottom/44.23.1396.877@44.23.1396.877" timestamp="1597329742711" />
-    <state width="362" height="756" key="GridCell.Tab.0.center" timestamp="1597387932048">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.0.bottom/43.23.1397.877@43.23.1397.877" timestamp="1595514070082" />
+    <state width="208" height="756" key="GridCell.Tab.0.bottom/44.23.1396.877@44.23.1396.877" timestamp="1597591043158" />
+    <state width="208" height="756" key="GridCell.Tab.0.center" timestamp="1597591043157">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.center/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655528" />
     <state width="1398" height="272" key="GridCell.Tab.0.center/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482103" />
@@ -291,10 +260,10 @@
     <state width="1398" height="240" key="GridCell.Tab.0.center/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935752" />
     <state width="1355" height="240" key="GridCell.Tab.0.center/40.23.1400.877@40.23.1400.877" timestamp="1595483259452" />
     <state width="1355" height="240" key="GridCell.Tab.0.center/41.23.1399.877@41.23.1399.877" timestamp="1595260691726" />
-    <state width="362" height="756" key="GridCell.Tab.0.center/43.23.1397.877@43.23.1397.877" timestamp="1597387932048" />
-    <state width="848" height="756" key="GridCell.Tab.0.center/44.23.1396.877@44.23.1396.877" timestamp="1597329742710" />
-    <state width="362" height="756" key="GridCell.Tab.0.left" timestamp="1597387932048">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.0.center/43.23.1397.877@43.23.1397.877" timestamp="1595514070081" />
+    <state width="208" height="756" key="GridCell.Tab.0.center/44.23.1396.877@44.23.1396.877" timestamp="1597591043157" />
+    <state width="208" height="756" key="GridCell.Tab.0.left" timestamp="1597591043156">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.left/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655527" />
     <state width="1398" height="272" key="GridCell.Tab.0.left/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482103" />
@@ -302,10 +271,10 @@
     <state width="1398" height="240" key="GridCell.Tab.0.left/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935752" />
     <state width="1355" height="240" key="GridCell.Tab.0.left/40.23.1400.877@40.23.1400.877" timestamp="1595483259452" />
     <state width="1355" height="240" key="GridCell.Tab.0.left/41.23.1399.877@41.23.1399.877" timestamp="1595260691726" />
-    <state width="362" height="756" key="GridCell.Tab.0.left/43.23.1397.877@43.23.1397.877" timestamp="1597387932048" />
-    <state width="848" height="756" key="GridCell.Tab.0.left/44.23.1396.877@44.23.1396.877" timestamp="1597329742710" />
-    <state width="362" height="756" key="GridCell.Tab.0.right" timestamp="1597387932049">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.0.left/43.23.1397.877@43.23.1397.877" timestamp="1595514070081" />
+    <state width="208" height="756" key="GridCell.Tab.0.left/44.23.1396.877@44.23.1396.877" timestamp="1597591043156" />
+    <state width="208" height="756" key="GridCell.Tab.0.right" timestamp="1597591043157">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.right/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655528" />
     <state width="1398" height="272" key="GridCell.Tab.0.right/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482104" />
@@ -313,10 +282,10 @@
     <state width="1398" height="240" key="GridCell.Tab.0.right/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935753" />
     <state width="1355" height="240" key="GridCell.Tab.0.right/40.23.1400.877@40.23.1400.877" timestamp="1595483259452" />
     <state width="1355" height="240" key="GridCell.Tab.0.right/41.23.1399.877@41.23.1399.877" timestamp="1595260691727" />
-    <state width="362" height="756" key="GridCell.Tab.0.right/43.23.1397.877@43.23.1397.877" timestamp="1597387932049" />
-    <state width="848" height="756" key="GridCell.Tab.0.right/44.23.1396.877@44.23.1396.877" timestamp="1597329742711" />
-    <state width="362" height="756" key="GridCell.Tab.1.bottom" timestamp="1597387932051">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.0.right/43.23.1397.877@43.23.1397.877" timestamp="1595514070081" />
+    <state width="208" height="756" key="GridCell.Tab.0.right/44.23.1396.877@44.23.1396.877" timestamp="1597591043157" />
+    <state width="208" height="756" key="GridCell.Tab.1.bottom" timestamp="1597591043153">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655530" />
     <state width="1398" height="272" key="GridCell.Tab.1.bottom/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482106" />
@@ -324,10 +293,10 @@
     <state width="1398" height="240" key="GridCell.Tab.1.bottom/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935755" />
     <state width="1355" height="240" key="GridCell.Tab.1.bottom/40.23.1400.877@40.23.1400.877" timestamp="1595483259434" />
     <state width="1355" height="240" key="GridCell.Tab.1.bottom/41.23.1399.877@41.23.1399.877" timestamp="1595260122417" />
-    <state width="362" height="756" key="GridCell.Tab.1.bottom/43.23.1397.877@43.23.1397.877" timestamp="1597387932051" />
-    <state width="848" height="756" key="GridCell.Tab.1.bottom/44.23.1396.877@44.23.1396.877" timestamp="1597329742674" />
-    <state width="362" height="756" key="GridCell.Tab.1.center" timestamp="1597387932050">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.1.bottom/43.23.1397.877@43.23.1397.877" timestamp="1595514070083" />
+    <state width="208" height="756" key="GridCell.Tab.1.bottom/44.23.1396.877@44.23.1396.877" timestamp="1597591043153" />
+    <state width="208" height="756" key="GridCell.Tab.1.center" timestamp="1597591043153">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.center/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655530" />
     <state width="1398" height="272" key="GridCell.Tab.1.center/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482105" />
@@ -335,10 +304,10 @@
     <state width="1398" height="240" key="GridCell.Tab.1.center/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935754" />
     <state width="1355" height="240" key="GridCell.Tab.1.center/40.23.1400.877@40.23.1400.877" timestamp="1595483259434" />
     <state width="1355" height="240" key="GridCell.Tab.1.center/41.23.1399.877@41.23.1399.877" timestamp="1595260122416" />
-    <state width="362" height="756" key="GridCell.Tab.1.center/43.23.1397.877@43.23.1397.877" timestamp="1597387932050" />
-    <state width="848" height="756" key="GridCell.Tab.1.center/44.23.1396.877@44.23.1396.877" timestamp="1597329742673" />
-    <state width="362" height="756" key="GridCell.Tab.1.left" timestamp="1597387932050">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.1.center/43.23.1397.877@43.23.1397.877" timestamp="1595514070082" />
+    <state width="208" height="756" key="GridCell.Tab.1.center/44.23.1396.877@44.23.1396.877" timestamp="1597591043153" />
+    <state width="208" height="756" key="GridCell.Tab.1.left" timestamp="1597591043152">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.left/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655529" />
     <state width="1398" height="272" key="GridCell.Tab.1.left/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482104" />
@@ -346,10 +315,10 @@
     <state width="1398" height="240" key="GridCell.Tab.1.left/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935754" />
     <state width="1355" height="240" key="GridCell.Tab.1.left/40.23.1400.877@40.23.1400.877" timestamp="1595483259434" />
     <state width="1355" height="240" key="GridCell.Tab.1.left/41.23.1399.877@41.23.1399.877" timestamp="1595260122416" />
-    <state width="362" height="756" key="GridCell.Tab.1.left/43.23.1397.877@43.23.1397.877" timestamp="1597387932050" />
-    <state width="848" height="756" key="GridCell.Tab.1.left/44.23.1396.877@44.23.1396.877" timestamp="1597329742672" />
-    <state width="362" height="756" key="GridCell.Tab.1.right" timestamp="1597387932051">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state width="1355" height="248" key="GridCell.Tab.1.left/43.23.1397.877@43.23.1397.877" timestamp="1595514070082" />
+    <state width="208" height="756" key="GridCell.Tab.1.left/44.23.1396.877@44.23.1396.877" timestamp="1597591043152" />
+    <state width="208" height="756" key="GridCell.Tab.1.right" timestamp="1597591043153">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.1.right/-1069.238.1069.811/0.23.1440.877@0.23.1440.877" timestamp="1594984655530" />
     <state width="1398" height="272" key="GridCell.Tab.1.right/-1112.263.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594894482105" />
@@ -357,8 +326,8 @@
     <state width="1398" height="240" key="GridCell.Tab.1.right/1440.412.1112.811/0.23.1440.877@0.23.1440.877" timestamp="1594904935755" />
     <state width="1355" height="240" key="GridCell.Tab.1.right/40.23.1400.877@40.23.1400.877" timestamp="1595483259434" />
     <state width="1355" height="240" key="GridCell.Tab.1.right/41.23.1399.877@41.23.1399.877" timestamp="1595260122417" />
-    <state width="362" height="756" key="GridCell.Tab.1.right/43.23.1397.877@43.23.1397.877" timestamp="1597387932051" />
-    <state width="848" height="756" key="GridCell.Tab.1.right/44.23.1396.877@44.23.1396.877" timestamp="1597329742673" />
+    <state width="1355" height="248" key="GridCell.Tab.1.right/43.23.1397.877@43.23.1397.877" timestamp="1595514070082" />
+    <state width="208" height="756" key="GridCell.Tab.1.right/44.23.1396.877@44.23.1396.877" timestamp="1597591043153" />
     <state width="1250" height="285" key="GridCell.Tab.2.bottom" timestamp="1594291964267">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -375,19 +344,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1250" height="285" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1594291964267" />
-    <state x="87" y="44" key="SettingsEditor" timestamp="1597330585577">
+    <state x="260" y="120" key="Registry" timestamp="1597591037662">
+      <screen x="44" y="23" width="1396" height="877" />
+    </state>
+    <state x="260" y="120" key="Registry/44.23.1396.877@44.23.1396.877" timestamp="1597591037662" />
+    <state x="87" y="44" key="SettingsEditor" timestamp="1597590988712">
       <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state x="44" y="44" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1594637440151" />
     <state x="83" y="44" key="SettingsEditor/40.23.1400.877@40.23.1400.877" timestamp="1595261065895" />
     <state x="86" y="44" key="SettingsEditor/43.23.1397.877@43.23.1397.877" timestamp="1595510429012" />
-    <state x="87" y="44" key="SettingsEditor/44.23.1396.877@44.23.1396.877" timestamp="1597330585577" />
-    <state x="413" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1597330420709">
-      <screen x="44" y="23" width="1396" height="877" />
+    <state x="87" y="44" key="SettingsEditor/44.23.1396.877@44.23.1396.877" timestamp="1597590988712" />
+    <state x="412" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1595504813969">
+      <screen x="43" y="23" width="1397" height="877" />
     </state>
     <state x="380" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1594444131666" />
     <state x="412" y="296" key="com.intellij.ide.util.TipDialog/43.23.1397.877@43.23.1397.877" timestamp="1595504813969" />
-    <state x="413" y="296" key="com.intellij.ide.util.TipDialog/44.23.1396.877@44.23.1396.877" timestamp="1597330420709" />
     <state x="547" y="88" key="refactoring.ChangeSignatureDialog" timestamp="1594452025226">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -396,11 +368,11 @@
       <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state x="407" y="211" key="run.anything.popup/44.23.1396.877@44.23.1396.877" timestamp="1597241918386" />
-    <state x="417" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1597387761529">
-      <screen x="43" y="23" width="1397" height="877" />
+    <state x="418" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1597244217717">
+      <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state x="385" y="112" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1594820410195" />
-    <state x="417" y="112" width="670" height="676" key="search.everywhere.popup/43.23.1397.877@43.23.1397.877" timestamp="1597387761529" />
+    <state x="417" y="112" width="670" height="676" key="search.everywhere.popup/43.23.1397.877@43.23.1397.877" timestamp="1595512531500" />
     <state x="418" y="112" width="670" height="676" key="search.everywhere.popup/44.23.1396.877@44.23.1396.877" timestamp="1597244217717" />
   </component>
 </project>

@@ -25,7 +25,7 @@
 <!--        <a href="/productTypeManagement">商品类型管理</a>-->
 <!--    </div>-->
     <div id="hname" style="background-color:#58D68D;">
-        <h1 style="margin-bottom:0;text-align:center;" >优惠券市场管理</h1>
+        <h1 style="margin-bottom:0;text-align:center;" >优惠券市场</h1>
     </div>
 
 
@@ -39,58 +39,11 @@
 
     <div id="body2" style="background-color:#D7DBDD;height:250px;width:300px;float:left;">
 
-        <b>新建 / 更新（'-1'为不更改）</b>
-        <br/>
-        <br/>
-        <form action="#" th:action="@{/customer/couponMarket}" th:object="${couponMarket}" method="post">
 
-            <table>
-                <tr>
-                    <td>券id：</td>
-                    <td><input type="text" th:field="*{couponId}" /></td>
-                </tr>
-                <tr>
-                    <td>券名：</td>
-                    <td><input type="text" th:field="*{couponName}" /><br/></td>
-                </tr>
-                <tr>
-                    <td>是否上线：</td>
-                    <td><input type="text" th:field="*{couponOnsale}" /></td>
-                </tr>
-                <tr>
-                    <td>金额门槛：</td>
-                    <td><input type="text" th:field="*{thresholdPrice}" /></td>
-                </tr>
-                <tr>
-                    <td>抵扣金额：</td>
-                    <td><input type="text" th:field="*{equivalentPrice}" /></td>
-                </tr>
-                <tr>
-                    <td>数量：</td>
-                    <td><input type="text" th:field="*{couponQuantity}" /></td>
-                </tr>
-                <tr>
-                    <td>过期时间：</td>
-                    <td>//TODO</td>
-<!--                    <td><input type="datetime-local" th:field="*{expireDate}" /></td>-->
-                </tr>
-                <tr>
-                    <td>详细说明：</td>
-                    <td><input type="text" th:field="*{couponDescription}"/></td>
-                    <td><input type="submit" value="提交" /></td>
-                </tr>
-
-            </table>
-
-        </form>
     </div>
 
     <div id="body3" style="background-color:#BFC9CA;height:250px;width:150px;float:left;">
-        <b>删除</b>
-        <form action="#" th:action="@{/customer/couponMarketDelete}" th:object="${couponMarket}" method="post">
-            <p>id: <input type="text" th:field="*{couponId}" /></p>
-            <p><input type="submit" value="删除" /></p>
-        </form>
+
     </div>
 
     <div id="body4" style="background-color:#D7DBDD;height:250px;width:150px;float:left;">
@@ -104,7 +57,7 @@
             <tr>
                 <th>ID</th>
                 <th>券名</th>
-                <th>是否上线</th>
+<!--                <th>是否上线</th>-->
                 <th>金额门槛</th>
                 <th>抵扣金额</th>
                 <th>数量</th>
@@ -115,7 +68,7 @@
             <tr th:each="CouponMarket : ${list}">
                 <td th:text="${CouponMarket.getCouponId()}">1</td>
                 <td th:text="${CouponMarket.getCouponName()}">1</td>
-                <td th:text="${CouponMarket.isCouponOnsale()}">1</td>
+<!--                <td th:text="${CouponMarket.isCouponOnsale()}">1</td>-->
                 <td th:text="${CouponMarket.getThresholdPrice()}">1</td>
                 <td th:text="${CouponMarket.getEquivalentPrice()}">1</td>
                 <td th:text="${CouponMarket.getCouponQuantity()}">1</td>
