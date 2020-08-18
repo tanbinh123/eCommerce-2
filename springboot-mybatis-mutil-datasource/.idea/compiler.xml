@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-mybatis-mutil-datasource" />
+        <module name="springboot-ecommerce" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-mybatis-mutil-datasource" target="7" />
+      <module name="springboot-ecommerce" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

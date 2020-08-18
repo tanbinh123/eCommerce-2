@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-mutil-datasource.iml" filepath="$PROJECT_DIR$/springboot-mybatis-mutil-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-ecommerce.iml" filepath="$PROJECT_DIR$/springboot-ecommerce.iml" />
     </modules>
   </component>
 </project>

@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>springboot</groupId>
-    <artifactId>springboot-mybatis-mutil-datasource</artifactId>
+    <artifactId>springboot-ecommerce</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-mybatis-mutil-datasource :: Spring Boot 实现 Mybatis 多数据源配置</name>
+    <name>springboot-ecommerce</name>
 
     <!-- Spring Boot 启动父依赖 -->
     <parent>
@@ -18,7 +18,7 @@
     <properties>
         <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
         <mysql-connector>5.1.39</mysql-connector>
-        <druid>1.0.18</druid>
+        <druid>1.1.1</druid>
     </properties>
 
     <dependencies>
@@ -66,7 +66,7 @@
         <!-- Druid 数据连接池依赖 -->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
+            <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druid}</version>
         </dependency>
 
