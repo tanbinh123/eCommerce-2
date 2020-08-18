@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-mybatis-mutil-datasource" target="1.6" />
+      <module name="springboot-mybatis-mutil-datasource" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>
