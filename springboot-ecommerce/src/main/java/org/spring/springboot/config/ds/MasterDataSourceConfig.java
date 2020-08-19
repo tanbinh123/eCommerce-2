@@ -40,6 +40,7 @@ public class MasterDataSourceConfig {
     @Value("${master.datasource.driverClassName}")
     private String driverClass;
 
+    @ConfigurationProperties(prefix = "master.datasource")
     @Bean(name = "masterDataSource")
     @Primary
     public DataSource masterDataSource() {
@@ -50,6 +51,8 @@ public class MasterDataSourceConfig {
         dataSource.setPassword(password);
         return dataSource;
     }
+
+
 
     @Bean(name = "masterTransactionManager")
     @Primary
@@ -73,8 +76,8 @@ public class MasterDataSourceConfig {
         ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
 
         Map<String, String> initParams = new HashMap<>();
-        initParams.put("loginUsername", "admin"); //后台管理界面的登录账号
-        initParams.put("loginPassword", "admin888"); //后台管理界面的登录密码
+        initParams.put("loginUsername", "root"); //后台管理界面的登录账号
+        initParams.put("loginPassword", "123456"); //后台管理界面的登录密码
 
         //initParams.put("allow", "localhost")：表示只有本机可以访问
         //initParams.put("allow", ""):表示后台允许所有访问
