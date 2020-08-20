@@ -5,268 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58fb2f86-6a93-4a71-bb2a-4318b605fb27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/brandonwong.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/cluster/CityMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/cluster/TransactionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/cluster/WalletMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/master/CouponMarketMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/master/ProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/master/ProductTypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/mapper/master/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/admin/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/production/springboot-sd-project/templates/userInterface/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-ecommerce.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/config/ds/ClusterDataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/config/ds/MasterDataSourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/CityRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/CouponMarketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/NavigatorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/ProductTypeManagementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/TransactionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/admin/UserRestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmCouponMarketController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmIndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmNavigatorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmProductManagementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmProductTypeManagementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmTransactionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/controller/customer/CtmUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/TransactionDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/cluster/WalletDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/CouponMarketDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/ProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/ProductTypeDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/dao/master/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/CouponMarket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/ProductType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/domain/Wallet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/CityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/CouponMarketService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/ProductManagementService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/ProductTypeManagementService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/TransactionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/WalletService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/CityServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/CouponMarketServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/ProductManagementServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/ProductTypeManagementServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/TransactionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/service/impl/WalletServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/springboot/task/ScheduledTasks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/CityMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/TransactionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/cluster/WalletMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/CouponMarketMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/ProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/ProductTypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/master/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/spring/springboot/ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/cluster/CityMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/cluster/TransactionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/cluster/WalletMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/master/CouponMarketMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/master/ProductMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/master/ProductTypeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/master/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/config/ds/ClusterDataSourceConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/config/ds/MasterDataSourceConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/CityRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/CouponMarketController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/IndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/NavigatorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/ProductManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/ProductTypeManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/TransactionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/admin/UserRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmCouponMarketController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmIndexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmNavigatorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmProductManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmProductTypeManagementController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmTransactionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/controller/customer/CtmUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/cluster/CityDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/cluster/TransactionDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/cluster/WalletDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/CouponMarketDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/ProductDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/ProductTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/dao/master/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/CouponMarket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/ProductType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/Transaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/domain/Wallet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/CityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/CouponMarketService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/ProductManagementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/ProductTypeManagementService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/TransactionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/WalletService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/CityServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/CouponMarketServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/ProductManagementServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/ProductTypeManagementServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/TransactionServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/service/impl/WalletServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/spring/springboot/task/ScheduledTasks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/productTypeManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/couponMarket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/inputWarning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/navigator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/productManagement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/transaction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer/user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-ecommerce-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springboot-ecommerce-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.spring.springboot.ApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.spring.springboot.ApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/spring/springboot/ApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/基于Spring MVC框架的支付宝优惠券管理核销平台.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,6 +47,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -354,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <module name="springboot-ecommerce" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -367,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="springboot-ecommerce" />
       <option name="filePath" />
       <option name="vmParameters" />
@@ -467,10 +207,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ApplicationTests.test" />
       <item itemvalue="Maven.clean install" />
       <item itemvalue="Maven.Mybatis Generator" />
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="JUnit.ApplicationTests.test" />
     </list>
     <recent_temporary>
       <list>
@@ -479,6 +219,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -498,6 +239,7 @@
       <workItem from="1595504767584" duration="5334000" />
       <workItem from="1595510617067" duration="12225000" />
       <workItem from="1597329713061" duration="600000" />
+      <workItem from="1597820297337" duration="28000" />
     </task>
     <servers />
   </component>
