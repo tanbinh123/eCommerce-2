@@ -38,7 +38,7 @@ master:
     url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
     username: root
     password: 12345678
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     # 自定义数据源
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 10
@@ -69,7 +69,7 @@ cluster:
     url: jdbc:mysql://localhost:3306/springbootdb_cluster?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
     username: root
     password: 12345678
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     # 自定义数据源
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 10

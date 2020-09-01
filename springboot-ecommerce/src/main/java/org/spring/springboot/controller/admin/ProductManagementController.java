@@ -27,7 +27,7 @@ public class ProductManagementController {
     public String listAllProductInMarket(Long productId, String productName, String productTag, Long productTypeId, Model model) {
         model.addAttribute("Product", new Product());
         List<Product> list;
-        model.addAttribute("host", "搜索结果");
+        model.addAttribute("path", "productManagement");
         Product myProduct = new Product();
         myProduct.setProductId(productId);
         myProduct.setProductName(productName);

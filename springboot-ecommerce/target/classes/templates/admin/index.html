@@ -1,46 +1,54 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Admin</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-</head>
-<body>
+<header th:replace="admin/header::header-fragment"></header>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- header-fragment -->
+    <div th:replace="admin/header::header-nav"></div>
+    <!-- sidebar-fragment -->
+    <div th:replace="admin/sidebar::sidebar-fragment(${path})"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- Main content -->
+        <div class="content">
+            <div class="card card-primary card-outline">
+                <div class="card-header">
+                    <h3 class="card-title">index</h3>
+                </div> <!-- /.card-body -->
+                <div class="card-body">
+                    <div class="panel panel-default">
+                        <div style="padding: 10px 0 20px 10px;">
+                            <a href="/admin/dist/img/mall-logo.png" target="_blank">
+                                <img th:src="@{/admin/dist/img/mall-logo.png}" style="width: 480px;height: 240px;">
+                                <p>introduction of this mall</p>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </a>
 
-<div id="maxname" style="width:900px;">
-
-
-
-    <div id="hname" style="background-color:#7DCEA0;">
-        <h1 style="margin-bottom:0;text-align:center;" >Hello, Administrator</h1>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
     </div>
-
-
-    <div id="body1" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
-
-
-    </div>
-    <div id="body2" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
-
-    </div>
-    <div id="body3" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
-
-    </div>
-    <div id="body4" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
-    </div>
-    <div id="body5" style="background-color:#BFC9CA;height:200px;width:150px;float:left;">
-
-
-    </div>
-    <div id="body6" style="background-color:#D7DBDD;height:200px;width:150px;float:left;">
-    </div>
-    <div id="bool" style="background-color:#F0F8FF;clear:both;text-align:center;">
-
-    </div>
+    <!-- /.content-wrapper -->
+    <!-- footer-fragment -->
+    <div th:replace="admin/footer::footer-fragment"></div>
 </div>
-
-
-
-
-
+<!-- jQuery -->
+<script th:src="@{/admin/plugins/jquery/jquery.min.js}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script th:src="@{/admin/plugins/jQueryUI/jquery-ui.min.js}"></script>
+<!-- Bootstrap 4 -->
+<script th:src="@{/admin/plugins/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<!-- AdminLTE App -->
+<script th:src="@{/admin/dist/js/adminlte.min.js}"></script>
 </body>
 </html>
