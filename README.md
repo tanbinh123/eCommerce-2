@@ -7,30 +7,19 @@ A distributed and highly concurrent e-commerce trading platform
 - [Features](#features)
 - [Installation](#installation)
 - [Documentation](#documentation)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [Translations](#translations)
-- [Your feedback](#your-feedback)
-- [License](#license)
+
 
 ## What makes this project special?
 
-This is a distributed and highly concurrent e-commerce trading platforme. 
-Based on Java and Springboot.
+The project is based on springboot+spring+dubbo+mysql+duird+zookeeper+redis+nginx distributed Alipay coupon management platform, including the creation of Alipay coupons, receiving card packages, verification time, automatic invalidation, card package management, etc. Functions, as well as an e-commerce platform for write-off scenarios, including commodity management, order payment, bill management, and balance management. The technologies involved in each function point in the project are as follows:
 
 ## Features
 
-- **GraphQL API**: Access all data from any web or mobile client using the latest technology
-- **Headless commerce**: Build mobile apps, customize storefronts and externalize processes
-- **UX and UI**: Designed for a user experience that rivals even the top commercial platforms
-- **Dashboard**: Administrators have total control of users, processes, and products
-- **Orders**: A comprehensive system for orders, dispatch, and refunds
-- **Cart**: Advanced payment and tax options, with full control over discounts and promotions
-- **Payments**: Flexible API architecture allows integration of any payment method. It comes with Braintree support out of the box.
-- **Geo-adaptive**: Automatic localized pricing. Over 20 local languages. Localized checkout experience by country.
-- **SEO**: Packed with features that get stores to a wider audience
-- **Cloud**: Optimized for deployments using Docker
-- **Analytics**: Server-side Google Analytics to report e-commerce metrics without affecting privacy
+1. The entire deployment architecture adopts a distributed deployment architecture based on nginx+zookeeper, where the database adopts the active and standby mode, and the session session also adopts the distributed session mechanism for disaster recovery prevention.
+2. Coupon automatically expires and expires using springboot-based timing tasks + thread pool + redis-based distributed locks to ensure the efficiency of task execution and the concurrency of execution
+3. Coupon collection uses the optimistic lock based on the mysql version number to ensure the high concurrency idempotent problem that the user receives, which has a good performance improvement compared to the pessimistic lock. At the same time, the distributed redis + token mechanism is used to prevent repeated submissions to ensure idempotence
+4. At the same time, a rule check is added to the receiving rules to ensure the correctness of the receiving rules.
+5. In the coupon verification process, the distributed redis transaction is used to ensure the concurrent issue of coupon verification. After the coupon expires, the landing card package becomes invalid. The task to ensure that the record status of the verified coupon in the card package is invalid
 
 ## Installation
 
