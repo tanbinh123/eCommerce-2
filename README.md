@@ -1,4 +1,4 @@
-# E-commerce
+# eCommerce
 A distributed and highly concurrent e-commerce trading platform
 
 ## Table of Contents
@@ -23,7 +23,7 @@ The project is based on springboot+spring+dubbo+mysql+duird+zookeeper+redis+ngin
 
 ## Installation
 
-This project requires Java 1.8, mySQL.
+This project requires Java 1.8, MySQL.
 
 
 ## Documentation
