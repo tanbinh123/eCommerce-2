@@ -1,4 +1,4 @@
-# JC E-commerce
+# E-commerce
 A distributed and highly concurrent e-commerce trading platform
 
 ## Table of Contents
