@@ -15,7 +15,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
-public class ProductManagementController {
+public class ProductController {
 
     @Autowired
     private ProductManagementService productManagementService;
@@ -23,11 +23,11 @@ public class ProductManagementController {
     @Autowired
     private ProductDao productDao;
 
-    @GetMapping("/productManagement")
+    @GetMapping("/products")
     public String listAllProductInMarket(Long productId, String productName, String productTag, Long productTypeId, Model model) {
         model.addAttribute("Product", new Product());
         List<Product> list;
-        model.addAttribute("path", "productManagement");
+        model.addAttribute("path", "products");
         Product myProduct = new Product();
         myProduct.setProductId(productId);
         myProduct.setProductName(productName);
@@ -36,7 +36,7 @@ public class ProductManagementController {
         myProduct.setProductState(null);
         list = productManagementService.searchProduct(myProduct);
         model.addAttribute("list", list);
-        return "admin/productManagement";
+        return "admin/products";
     }
 
 }

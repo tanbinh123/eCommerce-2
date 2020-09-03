@@ -1,9 +1,6 @@
 package org.spring.springboot.service.impl;
 
 import org.spring.springboot.dao.cluster.WalletDao;
-import org.spring.springboot.domain.Wallet;
-import org.spring.springboot.dao.cluster.CityDao;
-import org.spring.springboot.domain.City;
 import org.spring.springboot.dao.master.UserDao;
 import org.spring.springboot.domain.User;
 
@@ -24,8 +21,6 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao; // 主数据源
 
-    @Autowired
-    private CityDao cityDao; // 从数据源
 
     @Autowired
     private WalletDao walletDao; // 从数据源
@@ -46,9 +41,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void setCityList(List<User> list) {
         for(User myUser : list){
-            if (cityDao.findById(myUser.getId()) != null){
-                myUser.setCity(cityDao.findById(myUser.getId()));
-            }
+
         }
     }
 

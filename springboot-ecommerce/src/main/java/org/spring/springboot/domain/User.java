@@ -12,17 +12,11 @@ public class User {
 
     private String description;
 
-    private City city;
+
 
     private Wallet wallet;
 
-    public City getCity() {
-        return city;
-    }
 
-    public void setCity(City city) {
-        this.city = city;
-    }
 
     public Wallet getWallet() {
         return wallet;
