@@ -28,15 +28,15 @@
 
 
                 <li class="nav-header">Management</li>
-                <li class="nav-item">
-                    <a th:href="@{/admin/categories?parentId=0&categoryLevel=1&backParentId=0}"
-                       th:class="${path}=='newbee_mall_category'?'nav-link active':'nav-link'">
-                        <i class="fa fa-list-alt nav-icon" aria-hidden="true"></i>
-                        <p>
-                            Categories Management
-                        </p>
-                    </a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a th:href="@{/admin/categories?parentId=0&categoryLevel=1&backParentId=0}"-->
+<!--                       th:class="${path}=='category'?'nav-link active':'nav-link'">-->
+<!--                        <i class="fa fa-list-alt nav-icon" aria-hidden="true"></i>-->
+<!--                        <p>-->
+<!--                            Categories Management-->
+<!--                        </p>-->
+<!--                    </a>-->
+<!--                </li>-->
                 <li class="nav-item">
                     <a th:href="@{/admin/productManagement}" th:class="${path}=='productManagement'?'nav-link active':'nav-link'">
                         <i class="fa fa-archive nav-icon" aria-hidden="true"></i>
@@ -49,7 +49,7 @@
                     <a th:href="@{/admin/users}" th:class="${path}=='users'?'nav-link active':'nav-link'">
                         <i class="fa fa-users nav-icon" aria-hidden="true"></i>
                         <p>
-                            Customers Management
+                            Users Management
                         </p>
                     </a>
                 </li>
@@ -58,6 +58,14 @@
                         <i class="fa fa-money nav-icon" aria-hidden="true"></i>
                         <p>
                             Orders Management
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a th:href="@{/admin/transactions}" th:class="${path}=='transactions'?'nav-link active':'nav-link'">
+                        <i class="fa fa-money nav-icon" aria-hidden="true"></i>
+                        <p>
+                            Transaction Management
                         </p>
                     </a>
                 </li>

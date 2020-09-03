@@ -33,23 +33,10 @@ public class UserController {
     @Autowired
     private WalletService walletService;
 
-    @GetMapping("/user")
+    @GetMapping("/users")
     public String listAllUsers(Long id, Model model) {
-        User tempUser = new User();
-        tempUser.setCity(new City());
-        model.addAttribute("user", tempUser);
-        List<User> List;
-        if (id != null){
-            model.addAttribute("host", "搜索结果");
-            List = userService.findById(id);
-        }else{
-            model.addAttribute("host", "所有用户");
-            List = userService.findByName("%");
-        }
-        userService.setCityList(List);
-        userService.setWalletList(List);
-        model.addAttribute("List", List);
-        return "admin/user";
+        model.addAttribute("path", "users");
+        return "admin/users";
     }
 
 //    @GetMapping("/customer/{id}")
@@ -63,7 +50,7 @@ public class UserController {
 //        return "admin/customer";
 //    }
 
-    @PostMapping("/user")
+    @PostMapping("/users")
     public String userRegistrationOrUpdate(Model model, @ModelAttribute User user) {
         if(user.getId() == null){
             return "admin/inputWarning";
@@ -109,7 +96,7 @@ public class UserController {
 
         }
 
-        return "redirect:/admin/user";
+        return "redirect:/admin/users";
     }
 
     @PostMapping("/userDelete")

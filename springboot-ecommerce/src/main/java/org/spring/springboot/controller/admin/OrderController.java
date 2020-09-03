@@ -15,7 +15,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
-public class TransactionController {
+public class OrderController {
 
     @Autowired
     private UserService userService;
@@ -25,10 +25,15 @@ public class TransactionController {
 
 
 
-    @GetMapping("/transactions")
+    @GetMapping("/orders")
     public String findByTransactionId(Long id, Model model) {
-        model.addAttribute("path", "transactions");
-        return "admin/transactions";
+
+        model.addAttribute("path", "orders");
+
+        return "admin/orders";
     }
+
+
+
 
 }

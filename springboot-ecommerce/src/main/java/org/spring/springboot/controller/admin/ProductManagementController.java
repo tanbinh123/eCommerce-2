@@ -39,30 +39,4 @@ public class ProductManagementController {
         return "admin/productManagement";
     }
 
-
-
-    @PostMapping("/productManagement")
-    public String productInsertOrUpdate(Model model, @ModelAttribute Product product) {
-        if((product.getProductId() == null)){
-            model.addAttribute("host", "ID不能为空");
-            return "admin/inputWarning";
-        }else if(product.getProductQuantity() == null ){
-            model.addAttribute("host", "商品数量不能为空");
-            return "admin/inputWarning";
-        }
-
-        productManagementService.insertOrUpdateProduct(product);
-        return "redirect:/admin/productManagement";
-    }
-
-    @PostMapping("/productDelete")
-    public String deleteUser(Model model, @ModelAttribute Product product) {
-        if(product.getProductId() == null){
-            model.addAttribute("host", "ID不能为空");
-            return "admin/inputWarning";
-        }
-        productManagementService.deleteProduct(product.getProductId());
-        return "redirect:/admin/productManagement";
-    }
-
 }
