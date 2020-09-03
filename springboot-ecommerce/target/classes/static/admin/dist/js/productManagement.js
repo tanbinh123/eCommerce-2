@@ -79,14 +79,14 @@ function reload() {
 /**
  * add product
  */
-function addGoods() {
+function addProducts() {
     window.location.href = "/admin/goods/edit";
 }
 
 /**
  * edit product
  */
-function editGoods() {
+function editProducts() {
     var id = getSelectedRow();
     if (id == null) {
         return;
@@ -95,7 +95,7 @@ function editGoods() {
 }
 
 
-function putUpGoods() {
+function putUpProducts() {
     var ids = getSelectedRows();
     if (ids == null) {
         return;
@@ -133,7 +133,7 @@ function putUpGoods() {
 }
 
 
-function putDownGoods() {
+function putDownProducts() {
     var ids = getSelectedRows();
     if (ids == null) {
         return;
