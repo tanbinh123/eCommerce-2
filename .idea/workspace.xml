@@ -2,10 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab1c2ef1-ef4f-4add-bc50-bc91db7e8821" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/springboot-sd-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/springboot-sd-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-mutil-datasource/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis-mutil-datasource/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/config/ds/ClusterDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/config/ds/MasterDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/CityRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/CouponMarketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/NavigatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/ProductManagementController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/ProductTypeManagementController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/TransactionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/admin/UserRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmCouponMarketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmIndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmNavigatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmProductManagementController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmProductTypeManagementController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmTransactionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/controller/customer/CtmUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/cluster/CityDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/cluster/TransactionDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/cluster/WalletDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/master/CouponMarketDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/master/ProductDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/master/ProductTypeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/dao/master/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/CouponMarket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/ProductType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/domain/Wallet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/CityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/CouponMarketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/ProductManagementService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/ProductTypeManagementService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/TransactionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/WalletService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/CityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/CouponMarketServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/ProductManagementServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/ProductTypeManagementServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/TransactionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/service/impl/WalletServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-ecommerce/src/main/java/org/spring/springboot/task/ScheduledTasks.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,19 +68,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/springboot-ecommerce/src" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.[clean install]">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.spring.springboot.Application" />
       <module name="springboot-sd-project" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/springboot-ecommerce" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.spring.springboot.*" />
@@ -44,17 +96,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="[clean install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Maven.[clean install]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
@@ -74,6 +158,7 @@
       <updated>1594444025379</updated>
       <workItem from="1594444026623" duration="25000" />
       <workItem from="1597329905614" duration="673000" />
+      <workItem from="1599146368000" duration="1169000" />
     </task>
     <servers />
   </component>
@@ -85,14 +170,40 @@
       <screen x="44" y="23" width="1396" height="877" />
     </state>
     <state x="230" y="43" key="#Project_Structure/44.23.1396.877@44.23.1396.877" timestamp="1597330281304" />
-    <state x="206" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597330157926">
-      <screen x="44" y="23" width="1396" height="877" />
+    <state x="278" y="114" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599147420026">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="278" y="114" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599147420026" />
     <state x="206" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/44.23.1396.877@44.23.1396.877" timestamp="1597330157926" />
-    <state x="230" y="43" key="SettingsEditor" timestamp="1597330572034">
-      <screen x="44" y="23" width="1396" height="877" />
+    <state x="440" y="270" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599147411947">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="440" y="270" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1599147411947" />
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom" timestamp="1599147595255">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599147595255" />
+    <state width="1396" height="231" key="GridCell.Tab.0.center" timestamp="1599147595254">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599147595254" />
+    <state width="1396" height="231" key="GridCell.Tab.0.left" timestamp="1599147595254">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599147595254" />
+    <state width="1396" height="231" key="GridCell.Tab.0.right" timestamp="1599147595254">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1396" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599147595254" />
+    <state x="192" y="43" width="1168" height="837" key="SettingsEditor" timestamp="1599147186591">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="192" y="43" width="1168" height="837" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1599147186591" />
     <state x="230" y="43" key="SettingsEditor/44.23.1396.877@44.23.1396.877" timestamp="1597330572034" />
+    <state x="507" y="246" key="chooseDestDirectoryDialog" timestamp="1599146695042">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="507" y="246" key="chooseDestDirectoryDialog/0.23.1440.877@0.23.1440.877" timestamp="1599146695042" />
     <state x="430" y="152" key="spring file set editor" timestamp="1597330555163">
       <screen x="44" y="23" width="1396" height="877" />
     </state>

@@ -3,9 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/springboot-mybatis-mutil-datasource/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/springboot-mybatis-mutil-datasource/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/springboot-mybatis-mutil-datasource/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/springboot-ecommerce/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/springboot-ecommerce/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/springboot-ecommerce/src/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/springboot-ecommerce/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
