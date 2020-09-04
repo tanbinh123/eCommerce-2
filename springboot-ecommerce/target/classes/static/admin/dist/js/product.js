@@ -80,7 +80,7 @@ function reload() {
  * add product
  */
 function addProducts() {
-    window.location.href = "/admin/goods/edit";
+    window.location.href = "/admin/products/edit";
 }
 
 /**
