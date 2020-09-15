@@ -11,7 +11,7 @@ A distributed and highly concurrent e-commerce trading platform
 
 ## What makes this project special?
 
-The project is based on springboot+spring+dubbo+mysql+duird+zookeeper+redis+nginx distributed Alipay coupon management platform, including the creation of Alipay coupons, receiving card packages, verification time, automatic invalidation, card package management, etc. Functions, as well as an e-commerce platform for write-off scenarios, including commodity management, order payment, bill management, and balance management. The technologies involved in each function point in the project are as follows:
+This is a high concurrency e-shop platform, based on SpringBoot + MySQL + Zookeeper + Redis, which realize the basic functions of e-commerce, including goods management, order management, commodity purchase, coupon management, shopping cart management and so on.  The technologies involved in each function point in the project are as follows:
 
 ## Features
 
